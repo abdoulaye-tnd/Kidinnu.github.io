@@ -81,20 +81,30 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 defaults:
   - scope:
-      path: Disciplines.md
+      path: about.md
     values:
       menu: true
       order: 1
   - scope:
-      path: papers.md
+      path: disciplines.md
     values:
       menu: true
       order: 2
   - scope:
-      path: about.md
+      path: papers.md
     values:
       menu: true
       order: 3
+  - scope:
+      path: presentations.md
+    values:
+      menu: true
+      order: 4            
+  - scope:
+      path: videos.md
+    values:
+      menu: true
+      order: 5            
 
 
 # 3rd Party Integrations
