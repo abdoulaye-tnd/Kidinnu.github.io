@@ -86,7 +86,7 @@ defaults:
       menu: true
       order: 1
   - scope:
-      path: Projects.md
+      path: papers.md
     values:
       menu: true
       order: 2
