@@ -81,17 +81,12 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 defaults:
   - scope:
-      path: blog.md
+      path: Disciplines.md
     values:
       menu: true
       order: 1
   - scope:
-      path: MultibodyDynamics.md
-    values:
-      menu: true
-      order: 2
-  - scope:
-      path: Python.md
+      path: Projects.md
     values:
       menu: true
       order: 2
@@ -99,7 +94,7 @@ defaults:
       path: about.md
     values:
       menu: true
-      order: 4
+      order: 3
 
 
 # 3rd Party Integrations
