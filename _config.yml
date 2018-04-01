@@ -91,17 +91,17 @@ defaults:
       menu: true
       order: 2
   - scope:
-      path: /pages/papers.md
+      path: pages/papers.md
     values:
       menu: true
       order: 3
   - scope:
-      path: /pages/presentations.md
+      path: pages/presentations.md
     values:
       menu: true
       order: 4            
   - scope:
-      path: /pages/videos.md
+      path: pages/videos.md
     values:
       menu: true
       order: 5            
