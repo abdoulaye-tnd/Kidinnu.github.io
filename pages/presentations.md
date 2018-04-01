@@ -13,7 +13,7 @@ published: true
 
 [Технологии и языки программирования](python.md)
 
-Основы MATLAB
+[Основы MATLAB](matlab.md)
 
 Компьютерная графика
 
