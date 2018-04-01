@@ -86,22 +86,22 @@ defaults:
       menu: true
       order: 1
   - scope:
-      path: disciplines.md
+      path: /pages/disciplines.md
     values:
       menu: true
       order: 2
   - scope:
-      path: papers.md
+      path: /pages/papers.md
     values:
       menu: true
       order: 3
   - scope:
-      path: presentations.md
+      path: /pages/presentations.md
     values:
       menu: true
       order: 4            
   - scope:
-      path: videos.md
+      path: /pages/videos.md
     values:
       menu: true
       order: 5            
