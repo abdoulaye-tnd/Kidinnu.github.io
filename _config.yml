@@ -86,7 +86,7 @@ defaults:
       menu: true
       order: 1
   - scope:
-      path: /pages/disciplines.md
+      path: pages/disciplines.md
     values:
       menu: true
       order: 2
