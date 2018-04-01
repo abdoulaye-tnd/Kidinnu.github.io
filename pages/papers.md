@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Papers
+title:  Статьи
 ---
 
 [1] V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. doi:10.1016/j.actaastro.2017.07.008.
