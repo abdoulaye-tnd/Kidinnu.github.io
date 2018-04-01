@@ -12,5 +12,5 @@ tags:
 published: true
 ---
 
-После переезда на github доступен раздел [Презентации](pages/disciplines.md).
+После переезда на github доступен раздел [Презентации](pages/presentations.md).
 
