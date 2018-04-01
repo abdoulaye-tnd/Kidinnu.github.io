@@ -87,21 +87,25 @@ defaults:
       order: 1
   - scope:
       path: pages/disciplines.md
+      permalink: disciplines.html
     values:
       menu: true
       order: 2
   - scope:
       path: pages/papers.md
+      permalink: papers.html
     values:
       menu: true
       order: 3
   - scope:
       path: pages/presentations.md
+      permalink: presentations.html
     values:
       menu: true
       order: 4            
   - scope:
       path: pages/videos.md
+      permalink: videos.html
     values:
       menu: true
       order: 5            
