@@ -48,9 +48,23 @@ published: true
 
 [Элементы функционального программирования](https://github.com/Kidinnu/classes_programming/blob/master/presentations/Functional_programming_e.pdf)
 
+[Модули и пакеты](https://github.com/Kidinnu/classes_programming/blob/master/presentations/Python_modules_e.pdf)
+
 
 #### Семестр 2
 
+[Обработка ошибок](https://github.com/Kidinnu/classes_programming/blob/master/presentations/Pyhton_exceptions_e.pdf)
 
+[Основы ООП 1.](https://github.com/Kidinnu/classes_programming/blob/master/presentations/Python_OOP_part_I_e.pdf)
+
+[Основы ООП 2.](https://github.com/Kidinnu/classes_programming/blob/master/presentations/Python_OOP_part_II_e.pdf)
+
+[Библиотека numpy](https://github.com/Kidinnu/classes_programming/blob/master/presentations/Python_numpy_I_e.pdf)
+
+Библиотека scipy
+
+Библиотека matplotlib
+
+Библиотека pandas
 
 ### Компьютерная графика
