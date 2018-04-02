@@ -3,7 +3,7 @@ layout: page
 title:  Статьи
 ---
 
-1. V.S. Aslanov, V.V. Yudintsev  [Motion Control of Space Tug During Debris Removal by a Coulomb Force](https://arc.aiaa.org/doi/abs/10.2514/1.G003251). Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. doi:10.2514/1.G003251
+1. V.S. Aslanov, V.V. Yudintsev  [Motion Control of Space Tug During Debris Removal by a Coulomb Force](https://arc.aiaa.org/doi/abs/10.2514/1.G003251). Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. [doi:10.2514/1.G003251](https://arc.aiaa.org/doi/abs/10.2514/1.G003251)
 
 1. V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. [doi:10.1016/j.actaastro.2017.07.008](https://www.sciencedirect.com/science/article/pii/S0094576516302235).
 
@@ -39,4 +39,4 @@ title:  Статьи
 
 1. V. Aslanov, G. Kruglov, V. Yudintsev, NewtonEuler equations of multibody systems with changing structures for space applications, Acta Astronaut. 68 (2011) 2080–2087. [doi:10.1016/j.actaastro.2010.11.013](https://doi.org/10.1016/j.actaastro.2010.11.013).
 
-1. И.В. Белоконов, Г.E. Круглов, В.И. Трушляков, B.B. Юдинцев, Оценка возможности управляемого схода с орбиты верхней ступени РН “Союз” за счёт использования остатков топлива в баках, Вестник СГАУ. 2 (2010) 105–111.
+1. И.В. Белоконов, Г.E. Круглов, В.И. Трушляков, B.B. Юдинцев, Оценка возможности управляемого схода с орбиты верхней ступени РН "Союз" за счёт использования остатков топлива в баках, Вестник СГАУ. 2 (2010) 105–111.
