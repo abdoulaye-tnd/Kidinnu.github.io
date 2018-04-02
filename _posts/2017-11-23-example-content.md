@@ -12,5 +12,4 @@ tags:
 published: true
 ---
 
-После переезда на github доступен раздел [Презентации](pages/presentations.md).
-
+После переезда на github доступен раздел [Презентации](pages/presentations).
