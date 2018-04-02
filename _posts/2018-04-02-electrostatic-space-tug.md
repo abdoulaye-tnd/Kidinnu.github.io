@@ -21,4 +21,4 @@ published: true
 
 Статья посвящена вопросу устойчивого управления буксиром в процессе орбитальной транспортировки.
 
-V. S. Aslanov, V. V. Yudintsev Motion Control of Space Tug During Debris Removal by a Coulomb Force. Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. https://arc.aiaa.org/doi/10.2514/1.G003251
+V. S. Aslanov, V. V. Yudintsev [Motion Control of Space Tug During Debris Removal by a Coulomb Force. Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. doi:10.2514/1.G003251 ](https://arc.aiaa.org/doi/10.2514/1.G003251)
