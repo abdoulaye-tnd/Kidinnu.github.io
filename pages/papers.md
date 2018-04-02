@@ -3,25 +3,27 @@ layout: page
 title:  Статьи
 ---
 
-[1] V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. doi:10.1016/j.actaastro.2017.07.008.
+1. V.S. Aslanov, V.V. Yudintsev  [Motion Control of Space Tug During Debris Removal by a Coulomb Force](https://arc.aiaa.org/doi/abs/10.2514/1.G003251). Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. doi:10.2514/1.G003251
 
-[2] V. Yudintsev, V. Aslanov, Detumbling Space Debris Using Modified Yo-Yo Mechanism, J. Guid. Control. Dyn. 40 (2017) 714–721. doi:10.2514/1.G000686.
+1. V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. doi:10.1016/j.actaastro.2017.07.008.
 
-[3] V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic motions of tethered satellites with low thrust, in: 67th Int. Astronaut. Congr. IAC 2016; Guadalajara; Mex. 26 Sept. 2016 through 30 Sept. 2016, International Astronautical Federation, IAF, 2016.
+1. V.V. Yudintsev, V.S. Aslanov, Detumbling Space Debris Using Modified Yo-Yo Mechanism, J. Guid. Control. Dyn. 40 (2017) 714–721. doi:10.2514/1.G000686.
 
-[4] V.S. Aslanov, V. V. Yudintsev, The motion of tethered tug-debris system with fuel residuals, Adv. Sp. Res. 56 (2015) 1493–1501. doi:10.1016/j.asr.2015.06.032.
+1. V.S. Aslanov, A.K. Misra, V.V. Yudintsev, Chaotic motions of tethered satellites with low thrust, in: 67th Int. Astronaut. Congr. IAC 2016; Guadalajara; Mex. 26 Sept. 2016 through 30 Sept. 2016, International Astronautical Federation, IAF, 2016.
 
-[5] V.S. Aslanov, V. V. Yudintsev, Dynamics, analytical solutions and choice of parameters for towed space debris with flexible appendages, Adv. Sp. Res. 55 (2015) 660–667. doi:10.1016/j.asr.2014.10.034.
+1. V.S. Aslanov, V.V. Yudintsev, The motion of tethered tug-debris system with fuel residuals, Adv. Sp. Res. 56 (2015) 1493–1501. doi:10.1016/j.asr.2015.06.032.
 
-[6] V.S. Aslanov, V. V. Yudintsev, Behavior of tethered debris with flexible appendages, Acta Astronaut. 104 (2014) 91–98. doi:10.1016/j.actaastro.2014.07.028.
+1. V.S. Aslanov, V.V. Yudintsev, Dynamics, analytical solutions and choice of parameters for towed space debris with flexible appendages, Adv. Sp. Res. 55 (2015) 660–667. doi:10.1016/j.asr.2014.10.034.
 
-[7] V.S. Aslanov, V. V. Yudintsev, Dynamics, Analytical Solutions and Choice of Parameters for Towed Space Debris with Flexible Appendages, Adv. Sp. Res. 55 (2014) 660–667. doi:10.1016/j.asr.2014.10.034.
+[6] V.S. Aslanov, V.V. Yudintsev, Behavior of tethered debris with flexible appendages, Acta Astronaut. 104 (2014) 91–98. doi:10.1016/j.actaastro.2014.07.028.
 
-[8] V.S. Aslanov, V. V. Yudintsev, Behaviour of tethered debris with flexible appendages, Acta Astronaut. 104 (2014) 91–98. doi:10.1016/j.actaastro.2014.07.028.
+[7] V.S. Aslanov, V.V. Yudintsev, Dynamics, Analytical Solutions and Choice of Parameters for Towed Space Debris with Flexible Appendages, Adv. Sp. Res. 55 (2014) 660–667. doi:10.1016/j.asr.2014.10.034.
 
-[9] V.S. Aslanov, V. V. Yudintsev, Dynamics and chaos control of asymmetric gyrostat satellites, Cosm. Res. 52 (2014) 216–228. doi:10.1134/S0010952514030010.
+[8] V.S. Aslanov, V.V. Yudintsev, Behaviour of tethered debris with flexible appendages, Acta Astronaut. 104 (2014) 91–98. doi:10.1016/j.actaastro.2014.07.028.
 
-[10] V.S. Aslanov, V. V. Yudintsev, Dynamics and control of dual-spin gyrostat spacecraft with changing structure, Celest. Mech. Dyn. Astron. 115 (2013) 91–105. doi:10.1007/s10569-012-9453-8.
+[9] V.S. Aslanov, V.V. Yudintsev, Dynamics and chaos control of asymmetric gyrostat satellites, Cosm. Res. 52 (2014) 216–228. doi:10.1134/S0010952514030010.
+
+[10] V.S. Aslanov, V.V. Yudintsev, Dynamics and control of dual-spin gyrostat spacecraft with changing structure, Celest. Mech. Dyn. Astron. 115 (2013) 91–105. doi:10.1007/s10569-012-9453-8.
 
 [11] В.В. Андреев, С.Р. Бурназян, Г.Е. Круглов, В.В. Юдинцев, О влиянии упругих свойств конструкции разделяемых тел на их кинематические параметры после отделения, in: Сборник Трудов III Всероссийской Научно-Технической Конференции «Актуальные Проблемы Ракетно-Космической Техники» (Козловские Чтения), 2013: pp. 114–122.
 
