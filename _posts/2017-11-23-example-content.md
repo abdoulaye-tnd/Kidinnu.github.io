@@ -9,7 +9,7 @@ categories:
 tags:
   - example
   - content
-published: true
+published: false
 ---
 
 После переезда на github доступен раздел [Презентации](pages/presentations).
