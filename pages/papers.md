@@ -10,9 +10,17 @@ published: true
 
 ## 2017
 
+1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal
+mission of a spent rocket body using piggyback autonomous module. 3rd IAA Conf. Dyn. Control Sp. Syst.
+(DYCOSS 2017) 30 May - 1st June 2017 (Moscow) pp 667–681.
+
 1. V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. [doi:10.1016/j.actaastro.2017.07.008](https://www.sciencedirect.com/science/article/pii/S0094576516302235).
 
 1. V.V. Yudintsev, V.S. Aslanov, Detumbling Space Debris Using Modified Yo-Yo Mechanism, J. Guid. Control. Dyn. 40 (2017) 714–721. [doi:10.2514/1.G000686](https://doi.org/10.2514/1.G000686).
+
+1. O.G. Lagno, T.I. Lipatnikova, Y.N. Makarov, T.V. Mironova, V.I. Trushlyakov, Y.Y. Shatrov and V.V. Yudintsev
+Parameters design of autonomous docking module and the choice of suitable target and primary
+payload for ADR. Proc. 7th Eur. Conf. Sp. Debris ESOC 18 - 21 April 2017 (Darmstadt, Germany)
 
 ## 2016
 
