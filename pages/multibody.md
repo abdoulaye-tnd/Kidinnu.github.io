@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  Динамика твёрдого тела и систем тел
+title: Динамика твёрдого тела и систем тел
+published: true
 ---
 
 ## Кинематика твёрдого тела
@@ -8,13 +9,13 @@ title:  Динамика твёрдого тела и систем тел
 1. [Ортогональные матрицы](https://github.com/Kidinnu/mbs/blob/master/presentations/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%9E%D1%80%D1%82%D0%BE%D0%B3%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_v3.pdf)
 2. Углы Эйлера
 3. [Кватернионы](https://github.com/Kidinnu/mbs/blob/master/presentations/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%9A%D0%B2%D0%B0%D1%82%D0%B5%D1%80%D0%BD%D0%B8%D0%BE%D0%BD%D1%8B.pdf)
-4. Кинематические уравнения
+4. [Кинематические уравнения](https://drive.google.com/drive/u/1/folders/0B8W8o1Z482f6am52WWthcjBXWWc)
 
 ## Динамика твёрдого тела
 
-1. Основы динамики твёрдого тела
-2. Случай Эйлера
-3. Случай Лагранжа
+1. [Основы динамики твёрдого тела](https://drive.google.com/file/d/16pZtmdxiRk_sa5TFNjRnM4qd4E0OqIHt/view?usp=sharing)
+2. [Случай Эйлера](https://drive.google.com/drive/u/1/folders/0B8W8o1Z482f6am52WWthcjBXWWc)
+3. [Случай Лагранжа](https://drive.google.com/file/d/1jotRXOLmX340-e6oXjvlUTwnla0YTy7D/view?usp=sharing)
 
 ## Динамика систем твёрдых тел
 
