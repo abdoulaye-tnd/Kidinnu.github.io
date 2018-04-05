@@ -14,12 +14,12 @@ Presentation for 67th International Astronautical Congress (IAC), Guadalajara, M
 
 ## Учебные презентации
 
-[Динамика твёрдого тела и систем тел](multibody.md)
+1. [Динамика твёрдого тела и систем тел](multibody.md)
 
-[Технологии и языки программирования](python.md)
+1. [Технологии и языки программирования](python.md)
 
-[Основы MATLAB](matlab.md)
+1. [Основы MATLAB](matlab.md)
 
-[Компьютерный практикум по механике](comp_mechanics.md)
+1. [Компьютерный практикум по механике](comp_mechanics.md)
 
-Системы тел переменной структуры
+1. Системы тел переменной структуры
