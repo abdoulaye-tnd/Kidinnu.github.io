@@ -6,7 +6,7 @@ published: true
 
 ## Презентации для конференций
 
-1. Асланов В. С., Юдинцев В. В. [Стыковка с объёктом космического мусора с использованием упругой разворачиваемой штанги](https://drive.google.com/file/d/1IRBfJjNvF7ufU9F2DWZx75r-9HR2vjXx/view?usp=sharing). Presentation for 68th International Astronautical Congress (IAC), Adelaide, Australia, 25-29 September 2017.
+1. Асланов В. С., Юдинцев В. В. [Стыковка с объёктом космического мусора с использованием упругой разворачиваемой штанги](http://aslanov.ssau.ru/web/viewer.html?file=../papers/IAC-17-C1-4-5-x37887.pdf). Presentation for 68th International Astronautical Congress (IAC), Adelaide, Australia, 25-29 September 2017.
 
 1. Vladimir S. Aslanov, Arun K. Misra, Vadim V. Yudintsev [Chaotic motions of tethered satellites with low thrust](https://drive.google.com/file/d/17JxwcgPReCvsAjOyvu2QQ4nU8EXJc2-m/view?usp=sharing). Presentation for 67th International Astronautical Congress (IAC), Guadalajara, Mexico, 26-30 September 2016.
 
