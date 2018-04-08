@@ -14,6 +14,10 @@ published: true
 
 1. [Модификация механизма Йо-Йо: гашение угловой скорости орбитальной ступени при помощи механизма Йо-Йо без образования космического мусора](https://drive.google.com/file/d/1fs6KepBObuqqgp0SjYlUuxSris-CLMdw/view?usp=sharing). Презентация подготовлена для семинара кафедры теоретической механики по материалам статьи ["Detumbling Space Debris Using Modified Yo-Yo Mechanism"](https://arc.aiaa.org/doi/abs/10.2514/1.G000686) Journal of Guidance, Control, and Dynamics, Vol. 40, No. 3 (2017), pp. 714-721.
 
+1. [The Removal of Large Space Debris Using Tethered Space Tug.](https://drive.google.com/file/d/1oc6ggDXm1RcnDV09Mx-Hz8WkToKKQlcP/view?usp=sharing) Presentation for the 5th Eucass - European Conference for Aerospace Sciences - Munich, Germany, 1-4 July 2013.  
+
+1. [Dynamics of towed non-functional satellite by tether](https://www.youtube.com/watch?v=i1E0Rs3-qhI&feature=youtu.be)
+
 ## Учебные презентации
 
 1. [Динамика твёрдого тела и систем тел](multibody.md)
