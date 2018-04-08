@@ -10,3 +10,5 @@ description: Презентации к дисциплине "Компьютер�
 1. [Python и библиотека matplotlib](https://github.com/Kidinnu/classes_graphics/blob/master/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_2/Solve_ODE_and_plot.ipynb)
 1. Анимация в Mathematica
 1. [Основы Gnuplot](https://drive.google.com/file/d/1D4WhLo1yqducxHa8U4dmhe0cZ26uCa-G/view?usp=sharing)
+1. imagemagic и ffmpeg
+1. Основы Blender
