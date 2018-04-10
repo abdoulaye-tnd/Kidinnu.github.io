@@ -18,3 +18,12 @@ hide_description: true
 # Setting `menu` will generate an entry in the sidebar.
 menu: true
 ---
+
+
+Доцент [кафедры теоретической механики](http://termech.ru) [Самарского университета](http://ssau.ru). Старший научный сотрудник НИГ-63 (Научно-исследовательская группа механики).
+
+
+
+
+[Профиль в Scopus](https://www.scopus.com/authid/detail.uri?origin=resultslist&authorId=36676070000)
+[Профиль в РИНЦ](http://elibrary.ru/author_items.asp?authorid=2573-2099)
