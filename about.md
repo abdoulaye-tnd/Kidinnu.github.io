@@ -40,5 +40,6 @@ menu: true
 
 # Научная работа
 
+* [Статьи](http://classmech.ru/pages/papers/)
 * [Профиль в Scopus](https://www.scopus.com/authid/detail.uri?origin=resultslist&authorId=36676070000)
 * [Профиль в РИНЦ](http://elibrary.ru/author_items.asp?authorid=2573-2099)
