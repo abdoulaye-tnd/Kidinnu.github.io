@@ -8,6 +8,8 @@ published: true
 
 1. V.S. Aslanov, V.V. Yudintsev  [Motion Control of Space Tug During Debris Removal by a Coulomb Force](https://arc.aiaa.org/doi/abs/10.2514/1.G003251). Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. [doi:10.2514/1.G003251](https://arc.aiaa.org/doi/abs/10.2514/1.G003251)
 
+1. Асланов В.С., Юдинцев В.В. Выбор параметров системы увода космического мусора с упругими элементами посредством тросовой буксировки. Вестник Московского авиационного института. 2018. Т. 25. № 1. С. 7-17.
+
 ## 2017
 
 1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal
