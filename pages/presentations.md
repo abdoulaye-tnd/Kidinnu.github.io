@@ -6,6 +6,8 @@ published: true
 
 ## Презентации для конференций
 
+1. V. Trushlyakov, V. Yudintsev [Progress-M spacecraft as the basis for the space tug for adr missions](https://drive.google.com/file/d/12yVCn29WmAJtGrtjfZ1Qj4BtIa-vSAqO/view). Presentation for 5th European Workshop on Space Debris Modeling and Remediation - CNES HQ - Paris, June 25-27, 2018.
+
 1. Асланов В. С., Юдинцев В. В. [Стыковка с объёктом космического мусора с использованием упругой разворачиваемой штанги](http://aslanov.ssau.ru/web/viewer.html?file=../papers/IAC-17-C1-4-5-x37887.pdf). Presentation for 68th International Astronautical Congress (IAC), Adelaide, Australia, 25-29 September 2017.
 
 1. Vladimir S. Aslanov, Arun K. Misra, Vadim V. Yudintsev [Chaotic motions of tethered satellites with low thrust](https://drive.google.com/file/d/17JxwcgPReCvsAjOyvu2QQ4nU8EXJc2-m/view?usp=sharing). Presentation for 67th International Astronautical Congress (IAC), Guadalajara, Mexico, 26-30 September 2016.
