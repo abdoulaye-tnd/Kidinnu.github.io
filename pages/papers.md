@@ -10,6 +10,8 @@ published: true
 
 1. Асланов В.С., Юдинцев В.В. Выбор параметров системы увода космического мусора с упругими элементами посредством тросовой буксировки. Вестник Московского авиационного института. 2018. Т. 25. № 1. С. 7-17.
 
+1. V.I. Trushlyakov, V.V. Yudintsev, R.S. Pikalov Dynamic control of tug-debris tethered system after the capturing of the debris. Journal of Physics: Conference Series 1050 (2018) 012092. doi:10.1088/1742-6596/1050/1/012092
+
 ## 2017
 
 1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal
