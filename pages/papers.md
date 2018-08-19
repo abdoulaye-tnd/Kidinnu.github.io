@@ -12,6 +12,8 @@ published: true
 
 1. V.I. Trushlyakov, V.V. Yudintsev, R.S. Pikalov Dynamic control of tug-debris tethered system after the capturing of the debris. Journal of Physics: Conference Series 1050 (2018) 012092. doi:10.1088/1742-6596/1050/1/012092
 
+1. Патент РФ № 2658401, 16.03.2017. Универсальный транспортно-пусковой контейнер // Патент России № 2658401. 2018. Бюл. № 18. / Сивов М.Е., Юдинцев В.В.
+
 ## 2017
 
 1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal
