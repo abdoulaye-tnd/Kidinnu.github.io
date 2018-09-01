@@ -34,7 +34,7 @@ tagline:               >
 keywords:              []
 
 # Used by jekyll-seo-tag.
-logo:                  /assets/hal.png
+logo:                  /assets/img/hal.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
