@@ -24,11 +24,11 @@ title:                ClassMech
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Теоретическая и вычислительная механика. 
+  Теоретическая и вычислительная механика 
 
 # A shorter description for the sidebar.
 tagline:               >
-  Open `_config.yml` to edit this text.
+  Теоретическая и вычислительная механика
 
 # A list of keywords for your blog.
 keywords:              []
