@@ -8,8 +8,12 @@ author1:
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  #about:             |
-  #  
+  about:             |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    Open `_data/authors.yml` to edit this text.
 
   # This photo will be used in the about section.
   picture:
@@ -24,13 +28,13 @@ author1:
   social:
     twitter:         kidinnu
     github:          kidinnu
-    #download:        https://github.com/qwtel/hydejack-starter-kit/archive/master.zip
-    # email:           mailto:<mail@domain.tld>
+    # download:        <url>
+    # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
-    youtube:           UCtkD6qNuJnwn6wWGiOiE7Gg
+    youtube: UCtkD6qNuJnwn6wWGiOiE7Gg
     # vimeo:           <username>
     # vine:            <username>
     # spotify:         <user>/<number>
