@@ -16,3 +16,7 @@
 | Ctrl+Insert|копирование выделенного блока в буфер |
 | Shift+Insert|вставка из буфера |
 | -------|--------|
+
+| Default aligned |Left aligned|
+|-----------------|:-----------|
+| First body part |Second cell |
