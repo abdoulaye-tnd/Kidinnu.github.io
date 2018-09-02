@@ -14,7 +14,7 @@ description: Курс Информатика для студентов Инст�
 1. [Е.А. Симановский Методические указания к лабораторным работам](http://oi.ssau.ru/docs/Sim_met_ukaz.docx)
 1. [Е.А. Симановский Сборник заданий к лабораторным работам](http://oi.ssau.ru/docs/Sim_zadaniya_k_lab.docx)
 1. [Блок-схема](https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA-%D1%81%D1%85%D0%B5%D0%BC%D0%B0)
-1. [Команды среды разработки Turbo Pascal](../tp_cheat_sheet)
+1. [Команды среды разработки Turbo Pascal](/pages/informatics/tp_cheat_sheet)
 
 ### Стандарты и шаблоны
 1. [Шаблон отчёта по лабораторной работе](https://github.com/Kidinnu/Kidinnu.github.io/blob/master/pages/informatics/Lab_Report_Template.docx?raw=true)
