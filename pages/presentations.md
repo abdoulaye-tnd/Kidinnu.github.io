@@ -28,7 +28,7 @@ published: true
 
 1. [Динамика твёрдого тела и систем тел](multibody.md)
 
-1. [Технологии и языки программирования](python.md)
+1. [Технологии и языки программирования](/pages/python/presentations.md)
 
 1. [Основы MATLAB](matlab.md)
 
