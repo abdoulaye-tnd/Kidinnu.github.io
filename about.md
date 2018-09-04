@@ -8,9 +8,9 @@ title: Об авторе
 
 # Write a short (~150 characters) description of each blog post.
 # This description is used to preview the page on search engines, social media, etc.
-description: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+# description: >
+#  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+#  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 # You can show the description on the page by deleting this line:
 hide_description: true
@@ -19,7 +19,7 @@ hide_description: true
 menu: true
 ---
 
-> Доцент [кафедры теоретической механики](http://termech.ru) [Самарского университета](http://ssau.ru). Старший научный сотрудник НИГ-63 (Научно-исследовательская группа механики).
+> Юдинцев Вадим Вячеславович. Доцент [кафедры теоретической механики](http://termech.ru) [Самарского университета](http://ssau.ru). Старший научный сотрудник НИГ-63 (Научно-исследовательская группа механики).
 
 # Область интересов
 
