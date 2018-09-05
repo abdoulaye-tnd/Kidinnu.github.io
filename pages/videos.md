@@ -4,8 +4,4 @@ title: Видео
 published: true
 ---
 
-## Mechanis
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ei79Y_aqrm0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-1 
+Канал [youtube](https://www.youtube.com/channel/UCtkD6qNuJnwn6wWGiOiE7Gg)
