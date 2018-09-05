@@ -26,14 +26,14 @@ published: true
 
 ## Учебные презентации
 
-1. [Динамика твёрдого тела и систем тел](/pages/mbs/main.md)
+1. [Динамика твёрдого тела и систем тел](/pages/mbs/presentations)
 
 1. [Технологии и языки программирования](/pages/python/presentations)
 
 1. [Основы MATLAB](matlab.md)
 
-1. [Компьютерный практикум по механике](comp_mechanics.md)
+1. [Компьютерный практикум по механике](comp_mechanics)
 
 1. Системы тел переменной структуры
 
-1. [Компьютерная графика](/pages/graphics/main.md)
+1. [Компьютерная графика](/pages/graphics/presentations)
