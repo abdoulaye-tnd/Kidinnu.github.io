@@ -119,17 +119,17 @@ writeln('при x=', x, ' значение y=', y);
 readln;
 ~~~
 
-Код этой же программы на языке Python
+Код этой же программы на языке Python 
 ~~~python
 import math
 
-a = 1.5;
-b = 2.1;
-c = 3.22;
+a = 1.5
+b = 2.1
+c = 3.22
 
-x = float(input('Введите значение x = '));
+x = float(input('Введите значение x = '))
 
-y=(a*a+math.log(b*x))/(math.exp(x)+math.cos(c*x));
+y=(a*a+math.log(b*x))/(math.exp(x)+math.cos(c*x))
 
-print('при x= {} значение y = {}'.format(x,y));
+print('при x= {} значение y = {}'.format(x,y))
 ~~~
