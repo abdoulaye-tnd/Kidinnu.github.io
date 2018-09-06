@@ -1,6 +1,6 @@
 ---
 published: false
-layout: post
+layout: list
 title: Относительное орбитальное движение
 ---
 
