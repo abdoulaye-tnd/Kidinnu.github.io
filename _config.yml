@@ -24,7 +24,7 @@ title:                ClassMech
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Теоретическая и вычислительная механика 
+  Теоретическая и вычислительная механика
 
 # A shorter description for the sidebar.
 tagline:               >
@@ -105,7 +105,7 @@ defaults:
       permalink: presentations.html
     values:
       menu: true
-      order: 3            
+      order: 3
   - scope:
       path: pages/disciplines.md
       permalink: disciplines.html
@@ -117,7 +117,7 @@ defaults:
       permalink: videos.html
     values:
       menu: true
-      order: 5   
+      order: 5
 
 
 # 3rd Party Integrations
@@ -238,7 +238,8 @@ plugins:
 # Theme
 # ---------------------------------------------------------------------------------------
 
-remote_theme: qwtel/hydejack@v8.1.0
+#remote_theme: qwtel/hydejack@v8.1.0
+theme: jekyll-theme-hydejack-pro
 
 
 # SEO Tag
