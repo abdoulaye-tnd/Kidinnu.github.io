@@ -86,33 +86,37 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 # To change font-weight, see _sass/variables.scss
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
+
 defaults:
   - scope:
-      path:            hyde
+      path: about.md
     values:
-      accent_color:    rgb(38,139,210)
-      accent_image:
-        background:    rgb(32,32,32)
-        overlay:       false
-
-  # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
-  # but we want them to be `WebPage`s:
+      menu: true
+      order: 1
   - scope:
-      type:            projects
+      path: pages/papers.md
+      permalink: papers.html
     values:
-      seo:
-        type:          WebPage
+      menu: true
+      order: 2
   - scope:
-      type:            featured_categories
+      path: pages/presentations.md
+      permalink: presentations.html
     values:
-      seo:
-        type:          WebPage
+      menu: true
+      order: 3
   - scope:
-      type:            featured_tags
+      path: pages/disciplines.md
+      permalink: disciplines.html
     values:
-      seo:
-        type:          WebPage
-
+      menu: true
+      order: 4
+  - scope:
+      path: pages/videos.md
+      permalink: videos.html
+    values:
+      menu: true
+      order: 5
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
