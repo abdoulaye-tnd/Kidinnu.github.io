@@ -8,17 +8,15 @@ published: true
 
 1. V.S. Aslanov, V.V. Yudintsev  [Motion Control of Space Tug During Debris Removal by a Coulomb Force](https://arc.aiaa.org/doi/abs/10.2514/1.G003251). Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. [doi:10.2514/1.G003251](https://arc.aiaa.org/doi/abs/10.2514/1.G003251)
 
-1. Асланов В.С., Юдинцев В.В. Выбор параметров системы увода космического мусора с упругими элементами посредством тросовой буксировки. Вестник Московского авиационного института. 2018. Т. 25. № 1. С. 7-17.
+1. Асланов В.С., Юдинцев В.В. [Выбор параметров системы увода космического мусора с упругими элементами посредством тросовой буксировки](http://vestnikmai.ru/publications.php?ID=89045). Вестник Московского авиационного института. 2018. Т. 25. № 1. С. 7-17.
 
-1. V.I. Trushlyakov, V.V. Yudintsev, R.S. Pikalov Dynamic control of tug-debris tethered system after the capturing of the debris. Journal of Physics: Conference Series 1050 (2018) 012092. doi:10.1088/1742-6596/1050/1/012092
+1. V.I. Trushlyakov, V.V. Yudintsev, R.S. Pikalov [Dynamic control of tug-debris tethered system after the capturing of the debris](http://iopscience.iop.org/article/10.1088/1742-6596/1050/1/012092). Journal of Physics: Conference Series 1050 (2018) 012092. doi:10.1088/1742-6596/1050/1/012092
 
 1. [Патент РФ № 2658401, 16.03.2017. Универсальный транспортно-пусковой контейнер](https://drive.google.com/file/d/1bssrgaur2_z19DiF8r9qMdIkbjg-5mbx/view?usp=sharing) // Патент России № 2658401. 2018. Бюл. № 18. / Сивов М.Е., Юдинцев В.В.
 
 ## 2017
 
-1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal
-mission of a spent rocket body using piggyback autonomous module. 3rd IAA Conf. Dyn. Control Sp. Syst.
-(DYCOSS 2017) 30 May - 1st June 2017 (Moscow) pp 667–681.
+1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal mission of a spent rocket body using piggyback autonomous module. 3rd IAA Conf. Dyn. Control Sp. Syst. (DYCOSS 2017) 30 May - 1st June 2017 (Moscow) pp 667–681.
 
 1. V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. [doi:10.1016/j.actaastro.2017.07.008](https://www.sciencedirect.com/science/article/pii/S0094576516302235).
 
