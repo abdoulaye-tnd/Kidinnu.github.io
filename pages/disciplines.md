@@ -9,10 +9,10 @@ title:  Дисциплины
 1. [Технологии и языки программирования](/pages/python/main)
 1. [Компьютерная графика](/pages/graphics/main)
 1. [Методы вычислений](/pages/numerical_methods/main)
+1. [Основы MATLAB](/pages/matlab/main)
 
 ## Кафедра математических методов в экономике
 
 1. [Информатика](/pages/informatics/main)
 1. Базы данных
 1. Управление IT-сервисом и контентом
- 

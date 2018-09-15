@@ -30,7 +30,7 @@ published: true
 
 1. [Технологии и языки программирования](/pages/python/presentations)
 
-1. [Основы MATLAB](matlab.md)
+1. [Основы MATLAB](/pages/matlab/main)
 
 1. [Компьютерный практикум по механике](comp_mechanics)
 

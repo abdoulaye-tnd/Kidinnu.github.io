@@ -2,6 +2,7 @@
 layout: page
 title: Статьи
 published: true
+#accent_image: /assets/img/papers.jpg
 ---
 
 ## 2018
