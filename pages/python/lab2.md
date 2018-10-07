@@ -16,12 +16,14 @@ cells = [ [1, 1], [2, 1], [3, 1], [3, 2], [2, 3] ]
 Первый вариант программы
 
 ~~~python
+cells = [ [1, 1], [2, 1], [3, 1], [3, 2], [2, 3] ]
+
 x = 1
 y = 3
 
 isOccuped = False
 
-for cell ub cells :
+for cell in cells :
     if x == cell[0] and y == cell[1] :
       isOccuped = True
       break
@@ -32,6 +34,8 @@ print(isOccuped)
 Второй вариант программы
 
 ~~~python
+cells = [ [1, 1], [2, 1], [3, 1], [3, 2], [2, 3] ]
+
 x = 1
 y = 3
 
