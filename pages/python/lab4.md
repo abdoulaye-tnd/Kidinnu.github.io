@@ -40,9 +40,9 @@ x, y = 2, 3
 
 neighbours = list()
 
-%
-% Здесь ваш код
-%
+#
+# Здесь ваш код
+#
         
 print(neighbours)
 ~~~
