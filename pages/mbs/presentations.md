@@ -7,10 +7,10 @@ published: true
 
 ## Кинематика твёрдого тела
 
-1. [Ортогональные матрицы](https://www.dropbox.com/s/py5en4pa02cwkw8/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%9E%D1%80%D1%82%D0%BE%D0%B3%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B.pdf?dl=0)
-2. [Углы Эйлера](https://www.dropbox.com/s/02zu1r1t96ixdk8/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%A3%D0%B3%D0%BB%D1%8B_%D0%AD%D0%B9%D0%BB%D0%B5%D1%80%D0%B0.pdf?dl=0)
-3. [Кватернионы](https://www.dropbox.com/s/rki31caq7tl0uat/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%9A%D0%B2%D0%B0%D1%82%D0%B5%D1%80%D0%BD%D0%B8%D0%BE%D0%BD%D1%8B.pdf?dl=0)
-4. [Кинематические уравнения](https://www.dropbox.com/s/cetb5bru5fdzbe0/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C.pdf?dl=0)
+1. [Ортогональные матрицы](https://drive.google.com/file/d/1GebmDLXH8k03-gs0RtdYuZm227BH-yVp/view?usp=sharing)
+2. [Углы Эйлера](https://drive.google.com/file/d/1GMjMQrNITNxDVH4rDhHtF1qjgFCtZGJC/view?usp=sharing)
+3. [Кватернионы](https://drive.google.com/file/d/12dIpcccDHHpw9wUf68G6tKdLXbHRD3mq/view?usp=sharing)
+4. [Кинематические уравнения](https://drive.google.com/file/d/1iZ3SEl1hCQfbtXjmwhFrYrPTRt3-Ml1b/view?usp=sharing)
 
 ## Динамика твёрдого тела
 
