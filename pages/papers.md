@@ -27,6 +27,8 @@ published: true
 
 1. O.G. Lagno, T.I. Lipatnikova, Y.N. Makarov, T.V. Mironova, V.I. Trushlyakov, Y.Y. Shatrov and V.V. Yudintsev Parameters design of autonomous docking module and the choice of suitable target and primary payload for ADR. Proc. 7th Eur. Conf. Sp. Debris ESOC 18 - 21 April 2017 (Darmstadt, Germany)
 
+1. Асланов В. С., Юдинцев В. В.  Тросовая буксировка объекта космического мусора с полостью, заполненной жидкостью Труды МАИ. 2017. № 97.
+
 ## 2016
 
 1. V.S. Aslanov, A.K. Misra, V.V. Yudintsev, Chaotic motions of tethered satellites with low thrust, in: 67th Int. Astronaut. Congr. IAC 2016; Guadalajara; Mex. 26 Sept. 2016 through 30 Sept. 2016, International Astronautical Federation, IAF, 2016.
