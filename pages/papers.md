@@ -15,6 +15,8 @@ published: true
 
 1. [Патент РФ № 2658401, 16.03.2017. Универсальный транспортно-пусковой контейнер](https://drive.google.com/file/d/1bssrgaur2_z19DiF8r9qMdIkbjg-5mbx/view?usp=sharing) // Патент России № 2658401. 2018. Бюл. № 18. / Сивов М.Е., Юдинцев В.В.
 
+1. Асланов В. С., Юдинцев В. В. Классическая механика в технологиях увода космического мусора с орбиты. Сборник научно-методических статей. Теоретическая механика Вып. 30. / Под редакцией профессора В. А. Самсонова – М.: Издательство Московского университета, 2018. – 253 с.
+
 ## 2017
 
 1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal mission of a spent rocket body using piggyback autonomous module. 3rd IAA Conf. Dyn. Control Sp. Syst. (DYCOSS 2017) 30 May - 1st June 2017 (Moscow) pp 667–681.
