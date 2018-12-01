@@ -15,9 +15,9 @@ description: Процедуры и функции
 program Lab6;
 
 { Объявление процедуры с именем pifagor }
-procedure pifagor(a, b: real, var c: real);
+procedure pifagor(a, b: real; var c: real);
 begin
-  c = sqrt(a*a+b*b);  
+  c:=sqrt(a*a+b*b);  
 end;
 
 { Объявление переменных главной программы }
@@ -30,7 +30,7 @@ begin
   write('Введите длину катета b = '); readln(b);
 
   { Вызов процедуры. В третий параметр (с) записывается значение переменной c, вычисляемый внутри процедуры }
-  pifagor(a, b, с);     
+  pifagor(a,b,c);
 
   writeln('c = ', c:5:2);
 
@@ -48,7 +48,7 @@ program Lab6;
 function pifagor(a, b: real): real;
 begin
   { присваиваем результат работы функции её имени }
-  pifagor = sqrt(a*a+b*b);  
+  pifagor:=sqrt(a*a+b*b);  
 end;
 
 { Объявление переменных главной программы }
