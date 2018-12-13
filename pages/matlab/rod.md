@@ -19,30 +19,30 @@ L  = 1.0;
 M   = L*mu;
 % Количество точек
 N   = 30;
-% Расстояние между узлами (точками)
+% Distance between nodes
 p.L = L/N;
-% Масса узлов
+% Mass of the nodes
 p.m = M/N;
-% Жесткость пружины между узлами
+% Stiffness of the spring between nodes
 p.c = N*E*A/L;
 %
-% Начальное положение узлов
+% Initial positions of the nodes
 x0  = (1:N)'/N*(L+0.1);
-% Начальная скорость узлов
+% Initial velocities of the nodes
 vx0 = zeros(N,1);
-% Вектор состояния (положение и скорость)
+% Initial state vector  
 q0  = [x0;vx0];
-% Интегрируем
-[t, q] = ode113(@(t,q) dqdt(t,q,p),0:0.002:1,q0,odeset('RelTol',1e-8));
+% Integrate
+[t, q] = ode113(@(t,q) dqdt(t,q,p),0:0.002:2,q0,odeset('RelTol',1e-8));
 
-% Палитра
+% Colormap
 cmap = jet(192);
 dx = [q(:,1)-p.L (q(:,2:N) - q(:,1:N-1))-p.L];
 dx_max = max(max(dx))+0.001;
 dx_min = min(min(dx))-0.001;
 deformation2color = @(def) floor((def-dx_min)/((dx_max-dx_min)/192));
 
-% Видео
+% Write video
 v = VideoWriter('rod_d.avi');
 open(v);
 figure('Position',[100 100 900 600]);
@@ -69,6 +69,7 @@ for i=1:size(t,1)
     writeVideo(v,frame);
 end
 close(v);
+
 ~~~
 
 ## Стержень, как распределённая система
@@ -99,9 +100,11 @@ N  = @(i) 0;
 % Слагаемые общего решения
 yk = @(i,t,x) (M(i)*cos(p(i)*t)+N(i)*sin(p(i)*t))*sin((2*i-1)*pi*x*0.5/L);
 % Слагаемые деформации
-% ek = @(i,t,x) (M(i)*cos(p(i)*t)+N(i)*sin(p(i)*t))*cos((2*i-1)*pi*x*0.5/L)*(2*i-1)*pi*0.5/L;
+ek = @(i,t,x) (M(i)*cos(p(i)*t)+N(i)*sin(p(i)*t))*cos((2*i-1)*pi*x*0.5/L)*(2*i-1)*pi*0.5/L;
 % Общее решение y(t,x)
-y  = @(t,x) sum(arrayfun(@(i) yk(i,t,x),k));
+y   = @(t,x) sum(arrayfun(@(i) yk(i,t,x),k));
+% Деформация
+eks = @(t,x) sum(arrayfun(@(i) ek(i,t,x),k));
 % ------------------------------------------------------------------------
 % Рисуем
 % ------------------------------------------------------------------------
@@ -117,13 +120,14 @@ hold on;
 % Цветовая палитра JET
 cmap = colormap(jet(128));
 % Максимальная деформация
-maxd =  0.11;
-mind = -0.11;
+maxd =  0.2;
+mind = -0.2;
 def2index = @(d) floor((d-mind)/((maxd-mind)/size(cmap,1)));
 for t=0:0.002:2
     cla;
-    defx = arrayfun(@(xx) y(t,xx),x);
+    defx = arrayfun(@(xx) y(t,xx),x);    
     pos = x + defx;    
+    defx = arrayfun(@(xx) eks(t,xx),x);
     if 1 == 2
         plot(x, arrayfun(@(xx) y(t,xx),x));
     else
@@ -136,10 +140,10 @@ for t=0:0.002:2
             patch([prev_point pos(j) pos(j) prev_point],...
                 [0.1 0.1 -0.1 -0.1],col,'EdgeColor','none');            
         end
-        plot(pos, arrayfun(@(xx) y(t,xx),x));
+        plot(pos, arrayfun(@(xx) eks(t,xx),x));
         xlabel('x, м');ylabel('y, м');box('on');
     end
-    plot([0 L L 0],[0.103 0.103 -0.101 -0.101],'k:');
+    %plot([0 L L 0],[0.103 0.103 -0.101 -0.101],'k:');
     text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t,defx(end)+L));    
     text(0.1,0.35,sprintf('Частоты (Гц): '));    
     text(0.1,0.31,sprintf('%3.1f | ',(2*pi./p).^-1));    
