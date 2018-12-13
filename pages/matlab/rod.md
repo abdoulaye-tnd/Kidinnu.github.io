@@ -145,8 +145,8 @@ mind = -0.2;
 def2index = @(d) floor((d-mind)/((maxd-mind)/size(cmap,1)));
 for t=0:0.002:2
     cla;
-    defx = arrayfun(@(xx) y(t,xx),x);    
-    pos = x + defx;    
+    yx = arrayfun(@(xx) y(t,xx),x);    
+    pos = x + yx;    
     defx = arrayfun(@(xx) eks(t,xx),x);
     if 1 == 2
         plot(x, arrayfun(@(xx) y(t,xx),x));
@@ -164,7 +164,7 @@ for t=0:0.002:2
         xlabel('x, м');ylabel('y, м');box('on');
     end
     %plot([0 L L 0],[0.103 0.103 -0.101 -0.101],'k:');
-    text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t,defx(end)+L));    
+    text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t,yx(end)+L));    
     text(0.1,0.35,sprintf('Частоты (Гц): '));    
     text(0.1,0.31,sprintf('%3.1f | ',(2*pi./p).^-1));    
     frame = getframe;    
