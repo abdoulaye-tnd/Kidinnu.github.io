@@ -69,7 +69,27 @@ for i=1:size(t,1)
     writeVideo(v,frame);
 end
 close(v);
+~~~
 
+Файл-функция правых частей дифференциальных уравнений движения системы материальных точек
+
+~~~matlab
+function dq = dqdt(t, q, p)
+
+n  = size(q,1)/2;
+x  = q(1:n);
+
+% x1 (x2-x1) (x3-x2) (x4-x3) ... (xn - x_n-1)
+xdif = [x(1);diff(x)];
+% x1-L (x2-x1)-L (x3-x2)-L (x4-x3)-L ... (xn - x_n-1)-L
+dx   = xdif - repmat(p.L,n,1);
+%
+F    = -dx*p.c;
+F    = F - [F(2:end); 0];
+a    = F/p.m;
+dq   = [q(n+1:end);a];
+
+end
 ~~~
 
 ## Стержень, как распределённая система
