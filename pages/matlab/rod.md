@@ -19,30 +19,30 @@ L  = 1.0;
 M   = L*mu;
 % Количество точек
 N   = 30;
-% Distance between nodes
+% Расстояние между узлами (точками)
 p.L = L/N;
-% Mass of the nodes
+% Масса узлов
 p.m = M/N;
-% Stiffness of the spring between nodes
+% Жесткость пружины между узлами
 p.c = N*E*A/L;
 %
-% Initial positions of the nodes
+% Начальное положение узлов
 x0  = (1:N)'/N*(L+0.1);
-% Initial velocities of the nodes
+% Начальная скорость узлов
 vx0 = zeros(N,1);
-% Initial state vector  
+% Вектор состояния (положение и скорость)
 q0  = [x0;vx0];
-% Integrate
+% Интегрируем
 [t, q] = ode113(@(t,q) dqdt(t,q,p),0:0.002:1,q0,odeset('RelTol',1e-8));
 
-% Colormap
+% Палитра
 cmap = jet(192);
 dx = [q(:,1)-p.L (q(:,2:N) - q(:,1:N-1))-p.L];
 dx_max = max(max(dx))+0.001;
 dx_min = min(min(dx))-0.001;
 deformation2color = @(def) floor((def-dx_min)/((dx_max-dx_min)/192));
 
-% Write video
+% Видео
 v = VideoWriter('rod_d.avi');
 open(v);
 figure('Position',[100 100 900 600]);
