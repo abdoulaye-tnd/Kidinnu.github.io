@@ -6,7 +6,7 @@ published: true
 
 ## Стержень, как система материальных точек, связанных пружинами
 
-[Image](spring.png)
+![Image](spring.png)
 
 ~~~matlab
 % Модуль Юнга Н/м2
