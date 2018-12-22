@@ -164,7 +164,11 @@ dq   = [q(n+1:end);a];
 end
 ~~~
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NxsJKNXhRRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Стержень, как распределённая система
+
+Бабаков И.М. Теория колебаний. 4-е изд., испр. - М.: Дрофа, 2004. - 591 с
 
 Упругие свободные колебания однородного стержня постоянного сечения описыватся линейным уравнением в частных производных с постоянными коэффициентами
 
@@ -340,3 +344,5 @@ for t=0:0.002:2
 end
 close(v);
 ~~~
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZihqWpzX86A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
