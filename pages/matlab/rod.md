@@ -326,29 +326,26 @@ for t=0:0.002:2
     yx = arrayfun(@(xx) y(t,xx),x);    
     pos = x + yx;    
     defx = arrayfun(@(xx) eks(t,xx),x);
-    if 1 == 2
-        plot(x, arrayfun(@(xx) y(t,xx),x));
-    else
-        for j = 1:size(x,2)
-            col = cmap( def2index(defx(j)),:);
-            prev_point = 0;
-            if j ~= 1
-                prev_point = pos(j-1);
-            end
-            patch([prev_point pos(j) pos(j) prev_point],...
-                [0.1 0.1 -0.1 -0.1],col,'EdgeColor','none');            
+    for j = 1:size(x,2)
+        col = cmap( def2index(defx(j)),:);
+        prev_point = 0;
+        if j ~= 1
+            prev_point = pos(j-1);
         end
-        plot(pos, arrayfun(@(xx) eks(t,xx),x));
-        xlabel('x, м');ylabel('y, м');box('on');
+        patch([prev_point pos(j) pos(j) prev_point],...
+              [0.1 0.1 -0.1 -0.1],col,'EdgeColor','none');            
     end
-    %plot([0 L L 0],[0.103 0.103 -0.101 -0.101],'k:');
+    plot(pos, arrayfun(@(xx) eks(t,xx),x));
+    xlabel('x, м');ylabel('y, м');box('on');
+
     text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t,yx(end)+L));    
     text(0.1,0.35,sprintf('Частоты (Гц): '));    
     text(0.1,0.31,sprintf('%3.1f | ',(2*pi./p).^-1));    
+
     frame = getframe;    
-    writeVideo(v,frame);
+    writeVideo(v,frame);    
 end
 close(v);
 ~~~
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZihqWpzX86A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="720" src="https://www.youtube.com/embed/ZihqWpzX86A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
