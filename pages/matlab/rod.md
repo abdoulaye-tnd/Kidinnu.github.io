@@ -113,12 +113,13 @@ for i=1:size(t,1)
     % Координаты y
     vertex_y  = repmat([0.1 0.1 -0.1 -0.1],N,1);     
     % Рисуем все прямоугольники сразу
-    % Третий аргумент деформация каждой пружины для раскраски пряямоугольника
+    % Третий аргумент - деформация каждой пружины для раскраски прямоугольника
     patch(vertex_x', vertex_y', dydx,'FaceColor','flat');
     % Приведение диапазона деформаций к диапазону цветов
     caxis([dx_min dx_max]);
     colorbar;
     text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t(i),q(i,N)),'FontSize',20);   
+    % График деформаций
     fplot(@(x) interp1([0 q(i,1:N)],[0 dydx]*0.1/dx_max,x,'next'),[0 q(i,N)],'k-','LineWidth',1);
     frame = getframe(gcf);
     writeVideo(v,frame);
