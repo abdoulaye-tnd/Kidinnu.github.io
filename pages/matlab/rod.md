@@ -84,47 +84,36 @@ q0  = [x0;vx0];
 % Интегрирование
 [t, q] = ode113(@(t,q) dqdt(t,q,p),0:0.002:2,q0,odeset('RelTol',1e-8));
 
-% Создаем палитру (каждая строка -- тройка RGB, определяющая цвет)
-cmap = jet(192);
 % Вектор деформаций пружин
 dx = [q(:,1)-p.L (q(:,2:N) - q(:,1:N-1))-p.L];
 % Максимальная деформация
-dx_max = max(max(dx))+0.001;
+dx_max = max(max(dx));
 % Минимальная деформация
-dx_min = min(min(dx))-0.001;
-% Функция преобразования деформации в цвет
-deformation2color = @(def) floor((def-dx_min)/((dx_max-dx_min)/192));
-
+dx_min = -dx_max;
 % Открываем файл для записи видео
 v = VideoWriter('rod_d.avi');
 open(v);
-
-figure('Position',[100 100 900 600]);
+% Фигура
+figure('Position',[100 100 1920 1080]);
 axis([0 L*1.3,-0.5, 0.5]);
-grid on;
-hold on;
-
+set(gca,'FontSize',20);
+grid on; hold on;
+% Палитра
+colormap('jet');
 % Для каждого момента времени из таблицы результатов интегрирования
 for i=1:size(t,1)
     % Очищаем рисунок
     cla;
-    % Для каждой точки стержня
-    for j=1:N        
-        % Если это первая точка
-        if j==1
-           % то деформация пружины определяется только
-           deformation = q(i,j)-p.L;
-           col = deformation2color(deformation);
-           patch([0 q(i,j) q(i,j) 0],[0.1 0.1 -0.1 -0.1],cmap(col,:));
-        else
-           deformation = q(i,j)-q(i,j-1)-p.L;
-           col = deformation2color(deformation);           
-           patch([q(i,j-1) q(i,j) q(i,j) q(i,j-1)],[0.1 0.1 -0.1 -0.1],cmap(col,:));
-        end
-    end
-    text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t(i),q(i,N)));   
+    % Массив деформаций пружин
     dydx = ([q(i,1) diff(q(i,1:N))] - repmat(p.L,1,N));
-    plot([0 q(i,1:N)],[0 dydx*N]);
+    % Вершины прямоугольника, изображающего пружину   
+    vertex_x  = [0 q(i,1) q(i,1) 0; q(i,1:N-1)' q(i,2:N)' q(i,2:N)' q(i,1:N-1)'];
+    vertex_y  = repmat([0.1 0.1 -0.1 -0.1],N,1);     
+    patch(vertex_x', vertex_y', dydx,'FaceColor','flat');
+    caxis([dx_min dx_max]);
+    colorbar;
+    text(0.1,0.45,sprintf('T=%5.3f c. Длина стержня L=%5.3f м',t(i),q(i,N)),'FontSize',20);   
+    fplot(@(x) interp1([0 q(i,1:N)],[0 dydx]*0.1/dx_max,x,'next'),[0 q(i,N)],'k-','LineWidth',1);
     frame = getframe(gcf);
     writeVideo(v,frame);
 end
