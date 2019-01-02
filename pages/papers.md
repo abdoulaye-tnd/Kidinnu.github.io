@@ -31,13 +31,13 @@ published: true
 
 1. V.V. Yudintsev, V.S. Aslanov, Detumbling Space Debris Using Modified Yo-Yo Mechanism, J. Guid. Control. Dyn. 40 (2017) 714–721. [doi:10.2514/1.G000686](https://doi.org/10.2514/1.G000686).
 
-1. O.G. Lagno, T.I. Lipatnikova, Y.N. Makarov, T.V. Mironova, V.I. Trushlyakov, Y.Y. Shatrov and V.V. Yudintsev Parameters design of autonomous docking module and the choice of suitable target and primary payload for ADR. Proc. 7th Eur. Conf. Sp. Debris ESOC 18 - 21 April 2017 (Darmstadt, Germany)
+1. O.G. Lagno, T.I. Lipatnikova, Y.N. Makarov, T.V. Mironova, V.I. Trushlyakov, Y.Y. Shatrov and V.V. Yudintsev [Parameters design of autonomous docking module and the choice of suitable target and primary payload for ADR](https://conference.sdo.esoc.esa.int/proceedings/sdc7/paper/262/SDC7-paper262.pdf). Proc. 7th Eur. Conf. Sp. Debris ESOC 18 - 21 April 2017 (Darmstadt, Germany)
 
-1. Асланов В. С., Юдинцев В. В.  Тросовая буксировка объекта космического мусора с полостью, заполненной жидкостью Труды МАИ. 2017. № 97.
+1. Асланов В. С., Юдинцев В. В.  [Тросовая буксировка объекта космического мусора с полостью, заполненной жидкостью.](http://trudymai.ru/published.php?ID=87150) Труды МАИ. 2017. № 97.
 
 ## 2016
 
-1. V.S. Aslanov, A.K. Misra, V.V. Yudintsev, Chaotic motions of tethered satellites with low thrust, in: 67th Int. Astronaut. Congr. IAC 2016; Guadalajara; Mex. 26 Sept. 2016 through 30 Sept. 2016, International Astronautical Federation, IAF, 2016.
+1. V.S. Aslanov, A.K. Misra, V.V. Yudintsev, [Chaotic motions of tethered satellites with low thrust](https://www.researchgate.net/publication/310491122_Chaotic_Motions_of_Tethered_Satellites_with_Low_Thrust), in: 67th Int. Astronaut. Congr. IAC 2016; Guadalajara; Mex. 26 Sept. 2016 through 30 Sept. 2016, International Astronautical Federation, IAF, 2016.
 d
 1. [Способ проведения лётно-конструкторских испытаний автономного стыковочного модуля для очистки орбит от космического мусора](http://www.findpatent.ru/patent/264/2643020.html) Трушляков В.И., Юдинцев В.В., Макаров Ю.Н., Шатров Я.Т. Патент на изобретение RUS 2643020 06.09.2016.
 
