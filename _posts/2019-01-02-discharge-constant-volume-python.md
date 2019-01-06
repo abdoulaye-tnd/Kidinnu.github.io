@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: list 
 title: Истечение газа из ёмкости постоянного объёма
 tags: [python,scipy]
 ---
