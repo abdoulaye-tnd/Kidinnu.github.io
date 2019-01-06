@@ -1,6 +1,7 @@
 ---
 published: true
 layout: list
+tags: [космонавтика,space debris,космический мусор]
 ---
 Вышла новая статья про уборку космического мусора в Journal of Guidance, Control, and Dynamics. В этот раз не про трос, а про "тяговый луч".
 
