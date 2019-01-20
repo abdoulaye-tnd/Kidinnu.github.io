@@ -1,7 +1,7 @@
-
 ---
 layout: page
 title:  Ссылки
+published: true
 ---
 
 ## Космонавтика
