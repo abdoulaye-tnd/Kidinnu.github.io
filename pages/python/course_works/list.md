@@ -6,7 +6,6 @@ description: Задания для курсовой работы
 ---
 
 1. Игра жизнь
-1. [Многоугольник и точка](point_polygon)
-1. [Колонизация](colonization)
-1. [Лунолёт](lunolet)
- 
+1. [Многоугольник и точка](point_polygon.md)
+1. [Колонизация](colonization.md)
+1. [Лунолёт](lunolet.md)
