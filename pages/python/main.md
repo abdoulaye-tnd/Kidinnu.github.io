@@ -14,3 +14,7 @@ description: Курс для бакалавров первого года обу
 [Шаблон отчёта по лабораторной работе в формате docx](/pages/python/Lab_Report_Template.docx)
 
 [Задания для лабораторных работ](/pages/python/labs)
+
+## Курсовая работа
+
+[Задания для курсовых работ](/pages/python/course_works/list)
