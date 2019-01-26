@@ -66,4 +66,4 @@ $$
   a_i = \frac{\Delta m \cdot u}{\Delta t \cdot m_i \cdot g}
 $$
 
-![Лунолет](lunalet.jpg)
+![Лунолет](lunolet.jpg)
