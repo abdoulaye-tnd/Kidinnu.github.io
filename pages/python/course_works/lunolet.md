@@ -51,7 +51,7 @@ $$
 Скорость:
 
 $$
-  v_{i+1} = v_i - g \Delta t - 2 u \text{atanh}\frac{\Delta m}{\Delta m - 2 m_i}  
+  v_{i+1} = v_i - g \Delta t - 2 \cdot \text{atanh}\left(\frac{\Delta m}{\Delta m - 2 m_i}\right) \cdot u 
 $$
 
 Масса:
