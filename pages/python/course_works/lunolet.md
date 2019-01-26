@@ -43,7 +43,7 @@ description: Диалоговая игра [Лунолёт](http://epizodsspace.
 Пусть в момент времени $$t_i$$ посадочный модуль имеет скорость $$v_i$$ и находится на высоте $$h_i$$ от поверхности Луны. Тогда после расходования $$\Delta m$$ кг топлива за $$\Detla t$$ секунд, т.е. через $$t_{i+1} = t_{i} + \Delta t$$ высота посадочного модуля над поверхностью Луны будет определяться:
 
 $$
-  h_{i+1} = h_i - \frac{g \Delta t^2}{2} + \Delta t \cdot u \ln \left(1 - \Delta m/m_i \right) + \Delta t \cdot u + \Delta t \cdot v_i + \frac{\Delta t}{\Delta m} m_i u \ln (1-\Delta m/m_i)
+  h_{i+1} = h_i - \frac{g \Delta t^2}{2} + \cdot u \ln \left(1 - \Delta m/m_i \right) \Delta t + u \Delta t + \cdot v_i \Delta t + \frac{m_i}{\Delta m} u \ln (1-\Delta m/m_i) \Delta t
 $$
 
 где $$g$$ -- ускорение свободного падения на Луне, $$u \approx 3000$$ м/с - скорость истечения продуктов сгорания двигателя.   
