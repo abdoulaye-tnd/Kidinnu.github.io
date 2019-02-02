@@ -4,7 +4,7 @@ title:  Игра "Жизнь"
 published: true
 ---
 
-Разработать программу игры "Жизнь" на замкнутой поверхности (на торе) размером $$NxM$$.
+Разработать программу игры "Жизнь" на замкнутой поверхности (на торе) размером $$N \times M$$.
 
 1. Начальная конфигурация колонии задается в текстовом файле в виде пар координат клеток или в виде матрицы.
 2. В этом же файле (в начале файла) указывается размер поля (если колония задана парами координат).
@@ -16,4 +16,4 @@ published: true
 
 Используемые пакеты и модули: numpy, matplotlib
 
-См. также: https://nickcharlton.net/posts/drawing-animating-shapes-matplotlib.html
+См. также: [https://nickcharlton.net/posts/drawing-animating-shapes-matplotlib.html](https://nickcharlton.net/posts/drawing-animating-shapes-matplotlib.html)
