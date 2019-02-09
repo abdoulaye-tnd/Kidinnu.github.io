@@ -7,7 +7,7 @@ published: true
 
 ## 2019
 
-1. V. S. Aslanov, V. V. Yudintsev [Chaos in tethered tug-debris system induced by attitude oscillations of debris](https://arc.aiaa.org/doi/10.2514/1.G004162). Journal of Guidance, Control, and Dynamics. Publication Date (online): January 30, 2019.
+1. V. S. Aslanov, V. V. Yudintsev, [Chaos in tethered tug-debris system induced by attitude oscillations of debris](https://arc.aiaa.org/doi/10.2514/1.G004162). Journal of Guidance, Control, and Dynamics. Publication Date (online): January 30, 2019.
 
 ## 2018
 
