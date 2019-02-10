@@ -29,6 +29,12 @@ menu: true
 * Компьютерная графика
 * Информационные технологии
 
+# Научная работа
+ 
+* [Статьи](http://classmech.ru/pages/papers/)
+* [Профиль в Scopus](https://www.scopus.com/authid/detail.uri?origin=resultslist&authorId=36676070000)
+* [Профиль в РИНЦ](http://elibrary.ru/author_items.asp?authorid=2573-2099)
+
 # Образовательная деятельность
 
 * [Динамика твёрдого тела и систем твёрдых тел](/pages/mbs/main)
@@ -42,8 +48,3 @@ menu: true
 * Динамика систем тел переменной структуры
 * Базы данных
 
-# Научная работа
-
-* [Статьи](http://classmech.ru/pages/papers/)
-* [Профиль в Scopus](https://www.scopus.com/authid/detail.uri?origin=resultslist&authorId=36676070000)
-* [Профиль в РИНЦ](http://elibrary.ru/author_items.asp?authorid=2573-2099)
