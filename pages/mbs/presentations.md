@@ -26,3 +26,9 @@ published: true
 1. [Метод Виттенбурга (сферические шарниры)](https://github.com/Kidinnu/mbs/blob/master/presentations/%D0%92%D0%B8%D1%82%D1%82%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3_1_e.pdf)
 1. [Метод Виттенбурга (цилиндрические шарниры)](https://drive.google.com/file/d/1BRtonOftvkx8ut310TeVEACD9jx_kwKA/view?usp=sharing)
 1. [Метод Кейна](https://drive.google.com/file/d/1KLO6oR7ZwucYSbli2anlvrElVSGLW60Q/view?usp=sharing)
+
+## Прикладные задачи
+
+1. Отделение створок головного обтекателя
+1. Отделение космического аппарата 
+1. Относительное орбитальное движение
