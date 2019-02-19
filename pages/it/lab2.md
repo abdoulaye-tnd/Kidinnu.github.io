@@ -1,7 +1,7 @@
+---
 layout: page
 title: "Управление IT-сервисом и контентом". Лабораторная работа №2
 published: true
-categories: [it-service]
 ---
 
 ### Обзор систем управления Web-контентом
