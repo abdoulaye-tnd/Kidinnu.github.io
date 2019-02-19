@@ -25,6 +25,8 @@ published: true
 
 ## 2017
 
+1. [Как убрать космический мусор с рабочих орбит? О работе 7-й Европейской конференции по космическому мусору.](https://ssau.ru/news/14031-kak-ubrat-kosmicheskiy-musor-s-rabochikh-orbit)
+
 1. V.I. Trushlyakov V.V. Yudintsev Systems engineering design and optimization of an active debris removal mission of a spent rocket body using piggyback autonomous module. 3rd IAA Conf. Dyn. Control Sp. Syst. (DYCOSS 2017) 30 May - 1st June 2017 (Moscow) pp 667–681.
 
 1. V.S. Aslanov, A.K. Misra, V. V. Yudintsev, Chaotic attitude motion of a low-thrust tug-debris tethered system in a Keplerian orbit, Acta Astronaut. 139 (2017) 419–427. [doi:10.1016/j.actaastro.2017.07.008](https://www.sciencedirect.com/science/article/pii/S0094576516302235).
