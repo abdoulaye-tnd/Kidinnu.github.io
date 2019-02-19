@@ -44,6 +44,5 @@ Joomla, Drupal, WordPress, …
 ### Примеры
 Documentum, SharePoint, 1C-Bitrix, …
 
-
 [Шаблон отчёта по лабораторной работе](https://github.com/Kidinnu/Kidinnu.github.io/blob/master/pages/it/Lab_Report_Template.docx?raw=true)
 
