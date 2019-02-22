@@ -11,6 +11,8 @@ published: true
 
 ## 2018
 
+1. [Способ очистки орбит от объектов космического мусора](http://www1.fips.ru/wps/portal/IPS_Ru#1550839969355) [Текст] : пат. 267368 Рос. Федерация : МПК7 B 64 G 1/56, B 64 G 1/64 / Трушляков В. И., Юдинцев В. В., Макаров Ю. Н., Шатров Я. Т.; заявитель и патентообладатель Госкорпорация "Роскосмос". заявл. 09.02.18 ; опубл. 28.12.18, Бюл. № 1.
+
 1. Юдинцев В. В. [Динамика захвата сетью вращающегося объекта -- космического мусора // Вестник Московского авиационного института. 2018. Т. 25. № 4. С. 28-39](http://vestnikmai.ru/publications.php?ID=100051).
 
 1. V.S. Aslanov, V.V. Yudintsev  [Motion Control of Space Tug During Debris Removal by a Coulomb Force](https://arc.aiaa.org/doi/abs/10.2514/1.G003251). Journal of Guidance, Control, and Dynamics, 2018, March 22, 2018. [doi:10.2514/1.G003251](https://arc.aiaa.org/doi/abs/10.2514/1.G003251)
