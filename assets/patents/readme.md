@@ -5,5 +5,4 @@
 1. [Узел крышки транспортно-пускового контейнера](https://drive.google.com/file/d/1OV8aa5FrNs-XwNo-EIX-PVn_PPwMT65i/view?usp=sharing)
 1. [Универсальный транспортно-пусковой контейнер](https://drive.google.com/file/d/1bssrgaur2_z19DiF8r9qMdIkbjg-5mbx/view?usp=sharing)
 1. [Способ проведения лётно-конструкторских испытаний автономного стыковочного модуля для очистки орбит от космического мусора](https://drive.google.com/file/d/1tdoTZgLIrTQrzPObMGfWyaDtEdv1R2sC/view?usp=sharing)
-1. [Способ проведения лётно-конструкторских испытаний автономного стыковочного модуля для очистки орбит от космического мусора](https://drive.google.com/file/d/1tdoTZgLIrTQrzPObMGfWyaDtEdv1R2sC/view?usp=sharing)
 1. [Способ очистки орбит от объектов космического мусора](https://github.com/Kidinnu/Kidinnu.github.io/blob/master/assets/patents/Patent_2676368.pdf)
