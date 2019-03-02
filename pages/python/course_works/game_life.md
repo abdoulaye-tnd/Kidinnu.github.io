@@ -17,3 +17,5 @@ published: true
 Используемые пакеты и модули: numpy, matplotlib
 
 См. также: [https://nickcharlton.net/posts/drawing-animating-shapes-matplotlib.html](https://nickcharlton.net/posts/drawing-animating-shapes-matplotlib.html)
+
+[Список заданий](list.md)
