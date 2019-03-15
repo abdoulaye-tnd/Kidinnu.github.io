@@ -1,0 +1,266 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"LaTeXing: Open"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/vadim/Downloads/iTop-2/INSTALL",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2019/Мельница/paper/Trushlyakov_Yudintsev_ru.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/07_Python_OOP/Python_OOP_part_II.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/07_Python_OOP/Python_OOP_part_I.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2019/Мельница/paper/Trushlyakov_Yudintsev_0.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Виттенбург_Сферические_шарниры/Wittenburg.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Системы_тел_начало/Structure_v3.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/06_Python_IO/Python_input-output.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Основные принципы ДТТ/Презентация_Основные_принципы_динамики_ТТ.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/ADM_TUG/LaTeX/Trushlyakov_Yudintsev_Pikalov.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2019/Мельница/paper/Trushlyakov_Yudintsev.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Управление_IT_сервисом_и_контентом/presentations/L3/ITS_ITIL.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2019/Мельница/paper/Rotating_tether_for_active_debris_removal_using.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/04_Python_functions/Pyhton_functions.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/04_Python_functions/Functional_programming.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2019/Мельница/paper/LaTeXTemplates/Trushlyakov_Yudintsev.tex",
+		"/Users/vadim/Downloads/LaTeXTemplates/JPCSLaTeXGuidelines.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/BD/L1/BD_1.tex",
+		"/Users/vadim/Downloads/index.html",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/BD/L2/BD_2.tex",
+		"/Users/vadim/Downloads/IOPEXPORT_BIB.bib",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Управление_IT_сервисом_и_контентом/presentations/ITS_ITIL.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2019/Coulomb-Flow/paper/paper.tex",
+		"/Volumes/Untitled/model/a_data_II.txt",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Презентация_Ортогональные_матрицы_v4.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Управление_IT_сервисом_и_контентом/beamer.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Coloumb/paper.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Chaos/paper_v2/Aslanov_Chaos_in_tethered_tug-debris system_induced_by_the_debris_oscillations_v2.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Chaos/paper_v2/Aslanov_Chaos_in_tethered_tug-debris system_induced_by_the_debris_oscillations.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/Exam/exam-1/questions/questions_list.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/Exam/exam-1/questions/questions2.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/Технологии_и_языки_программирования/Exam/exam-1/questions/questions.tex",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/rod_continious.m",
+		"/Users/vadim/Downloads/untitled.md",
+		"/Volumes/Untitled/model/mz.txt",
+		"/Users/vadim/Downloads/Lab_rabota_6-2.pas",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/University/Аттестация/Кафедра_ТМ/Б - Прикладные_задачи_динамики_твердого_тела/test.md",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/University/Аттестация/Кафедра_ТМ/Б - Многопроцессорные_вычисления/Tests.md",
+		"/Users/vadim/Downloads/Lab_rabota_6_programma.pas",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/exam/S2/exam.tex",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/University/Кафедра_ТМ/Б - Компьютерная_графика/Тест.md",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/University/Кафедра_ТМ/Б - Инженерные_методы_в_механике_деформируемого_твердого_тела/Вопросы.md",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Угловая_скорость/Презентация_Угловая_скорость.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Случай_Эйлера/Случай_Эйлера.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Презентация_Основные_принципы_динамики_ТТ.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/DTT/presentations/Презентация_Кватернионы_v3.tex",
+		"/Users/vadim/Library/Services/Convert to PDF using Pandoc.workflow/Contents/document.wflow",
+		"/Users/vadim/Library/Application Support/Sublime Text 3/Packages/User/PanDoc-pdf.sublime-build",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/Reviews/Breakup_prediction.md",
+		"/Users/vadim/Library/Mobile Documents/com~apple~CloudDocs/University/Кафедра_ТМ/Учебные_планы.md",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Net_en/Yudintsev_Capturing_tumbling_space_debris_using_drag_net.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Net/matlab/3D/cases/plot.gp",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Chaos/paper/Aslanov_Chaos_in_tethered_tug-debris system_induced_by_the_debris_oscillations.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Net_en/Yudintsev.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Net_en/elsarticle-template-1-num.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/matlab/ODE-OrbitalMotion/orbital3.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/matlab/ODE-OrbitalMotion/orbital.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/Documents/University/Classes/matlab/ODE-OrbitalMotion/orbital3.pdf",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Chaos/paper/paper.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/Мельница/paper/Rotating_tether_for_active_debris_removal_using.tex",
+		"/Users/vadim/.yandex.disk/83150847/Yandex.Disk.localized/papers/2018/IAC-18/images/debris-tug-fuel-Earth.svg"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 119.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 224.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 416.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
