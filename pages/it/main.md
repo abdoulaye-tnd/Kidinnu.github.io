@@ -8,7 +8,7 @@ published: true
 
 1. ИТ-служба, ИТ-инфраструктура и ИТ-сервис
 1. [Управление инцидентами](https://drive.google.com/file/d/1oID1XR2bKB2Cbs1mS3r3fgQCu7NAdrPd/view?usp=sharing)
-1. Управление конфигурациями и изменениями
+1. [Управление конфигурациями и изменениями](https://drive.google.com/open?id=1-bcT7_tJF3Txzo8tKXnIsixBCqqWPqRF)
 1. Системы управления контентом
 
 ## Лабораторные работы
