@@ -61,6 +61,7 @@ description: Определение оптимального пути облёт
 
 Программа должна вывести на экран и сохранить в файл png две проекции маршрута на плоскость xz и xy, на которых дисками обозначены звездные системы.
 
-[http://www.zitterbug.net/future/future815.html](Формулы для расчёта)
+[http://www.zitterbug.net/future/future815.html](Into the future)
+[http://math.ucr.edu/home/baez/physics/Relativity/SR/Rocket/rocket.html](The Relativistic Rocket)
 
 [Список заданий](list.md)
