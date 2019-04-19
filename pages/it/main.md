@@ -10,6 +10,7 @@ published: true
 1. [Управление инцидентами](https://drive.google.com/file/d/1oID1XR2bKB2Cbs1mS3r3fgQCu7NAdrPd/view?usp=sharing)
 1. [Управление конфигурациями и изменениями](https://drive.google.com/open?id=1-bcT7_tJF3Txzo8tKXnIsixBCqqWPqRF)
 1. Системы управления контентом
+1. [Основы информационной безопасности](https://drive.google.com/file/d/1e7CVK-Lc61ryvMBcJSWRkb6kTNrR5Gou/view?usp=sharing)
 
 ## Лабораторные работы
 
