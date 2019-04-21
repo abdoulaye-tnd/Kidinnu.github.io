@@ -15,6 +15,8 @@ published: true
 
 ## Презентации для конференций и семинаров
 
+1. Трушляков В. И., Юдинцев В. В. [Вращающаяся тросовая система для увода космического мусора](https://drive.google.com/file/d/1PQ-8ZMFFKO5MHDjg3DcxUPVjqq-Zrtcs/view?usp=sharing). III International scientific conference "Mechanical Science and Technology Update" (MSTU-2019). 23-24 April, 2019 (Omsk, Russia).
+
 1. Трушляков В.И., Юдинцев В. В. [Космический буксир на базе ТГК "Прогресс" для активного увода космического мусора](https://drive.google.com/file/d/1sGT0h9tBtmcxlB7LeMF44CEFPpyDUr9l/view?usp=sharing). Презентация для Девятого Международного Аэрокосмического Конгресса. МГУ им. М.В. Ломоносова, 28-31 августа 2018 г.
 
 1. V. Yudintsev [The problems of nanosatellite cluster launching and the deployers for nanosatellites separation](https://drive.google.com/file/d/1vQE2SEeH9MQwjAKiVcTy-cM9pLYhkK1w/view). Presentation for the XIV International Summer Space School “Future Space Technologies and Experiments in Space”, Samara University, Samara, Russia, 20 Aug - 1 Sep, 2018.
