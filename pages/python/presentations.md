@@ -26,5 +26,5 @@ description: >-
 1. [Библиотека numpy](https://drive.google.com/file/d/1YQysF89HK5c_cI6A-EwdsqPIC0ZcdWj7/view?usp=sharing)
 1. [Библиотека scipy](https://drive.google.com/file/d/1yLo0EQbdrXXM-SkNfeKSRnGr5raor4DV/view?usp=sharing)
 1. [Машинная арифметика](https://ru.scribd.com/document/377633361/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F-%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0)
-1. [Библиотека matplotlib](https://drive.google.com/file/d/10Bbqd32f_1JCdeTdjEwIq1D4f_YWJK3H/view?usp=sharing)
+1. [Библиотека matplotlib](https://drive.google.com/file/d/1YJr-GDaK8a-5uP5PNmzuQyuPXEQwuFcT/view?usp=sharing)
 1. Библиотека pandas
