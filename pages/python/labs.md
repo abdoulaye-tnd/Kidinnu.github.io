@@ -20,4 +20,4 @@ description: Задания для лабораторных работ по ку
 1. [Задание 2](/pages/python/lab7)
 1. [Задание 3](/pages/python/lab8)
 1. [Задание 4](/pages/python/lab9)
-1. Задание 5
+1. [Задание 5](/pages/python/lab10)
