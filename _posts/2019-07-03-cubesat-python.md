@@ -305,7 +305,6 @@ $$
 
 ## Программа
 
-
 ```python
 # Символные математические преобразоания
 import sympy as sp
@@ -339,10 +338,8 @@ pylab.rcParams.update({'legend.fontsize': 14,
                        'axes.titlesize':14, 
                        'xtick.labelsize':14,
                        'ytick.labelsize':14})
-```
 
 
-```python
 # Положение центра масс (yc, zc), ширина наноспутника (w), время (t)
 yc, zc, w, t = sp.symbols('y_c z_c w t')
 
@@ -359,25 +356,16 @@ zb = z(t) + yc*sp.sin(beta(t)) - zc*sp.cos(beta(t)) + w*sp.sin(beta(t))/2
 
 # Сила, действующая на наноспутник, зависящая от zb
 P = sp.Piecewise( (P0-(P0-Pk)*zb/h, zb <= h), (0, zb>h) )
-```
 
-
-```python
 # Длина наноспутника (L), максимальный зазор между контейнером и наноспутником (d), начальный угол (beta0)
 L, d, beta0 = sp.symbols('L d beta_0')
 
 # Длина контейнера -- расстояние OA_0
 Ld = L*sp.cos(beta0) - w*sp.sin(beta0) 
-```
 
-
-```python
 # Масса и момент инерции наноспутника
 m, J = sp.symbols('m, J')
-```
 
-
-```python
 # Вектор обобщенных координат
 q  = [y(t), z(t), beta(t)]
 
@@ -386,221 +374,48 @@ dq = [sp.diff(var,t) for var in q]
 
 # Вектор обобщенных ускорений (производная от dq)
 d2q = [sp.diff(var,t) for var in dq]
-d2q
-```
 
-
-
-
-$\displaystyle \left[ \frac{d^{2}}{d t^{2}} y{\left(t \right)}, \  \frac{d^{2}}{d t^{2}} z{\left(t \right)}, \  \frac{d^{2}}{d t^{2}} \beta{\left(t \right)}\right]$
-
-
-
-### Силы
-
-```python
 # Столбец [Fy Fz Mx] -- первые три строки правой части уравнений движения
 FyzMx = sp.Matrix([0,P,P*(zc*sp.sin(beta(t)) + yc*sp.cos(beta(t)))]) 
 FyzMx
-```
 
-
-
-
-$\displaystyle \left[\begin{matrix}0\\\begin{cases} P_{0} - \frac{\left(P_{0} - P_{k}\right) \left(\frac{w \sin{\left(\beta{\left(t \right)} \right)}}{2} + y_{c} \sin{\left(\beta{\left(t \right)} \right)} - z_{c} \cos{\left(\beta{\left(t \right)} \right)} + z{\left(t \right)}\right)}{h} & \text{for}\: h \geq \frac{w \sin{\left(\beta{\left(t \right)} \right)}}{2} + y_{c} \sin{\left(\beta{\left(t \right)} \right)} - z_{c} \cos{\left(\beta{\left(t \right)} \right)} + z{\left(t \right)} \\0 & \text{otherwise} \end{cases}\\\left(y_{c} \cos{\left(\beta{\left(t \right)} \right)} + z_{c} \sin{\left(\beta{\left(t \right)} \right)}\right) \left(\begin{cases} P_{0} - \frac{\left(P_{0} - P_{k}\right) \left(\frac{w \sin{\left(\beta{\left(t \right)} \right)}}{2} + y_{c} \sin{\left(\beta{\left(t \right)} \right)} - z_{c} \cos{\left(\beta{\left(t \right)} \right)} + z{\left(t \right)}\right)}{h} & \text{for}\: h \geq \frac{w \sin{\left(\beta{\left(t \right)} \right)}}{2} + y_{c} \sin{\left(\beta{\left(t \right)} \right)} - z_{c} \cos{\left(\beta{\left(t \right)} \right)} + z{\left(t \right)} \\0 & \text{otherwise} \end{cases}\right)\end{matrix}\right]$
-
-
-
-### Уравнения связей
-
-
-```python
-
-```
-
-
-```python
 # Уравнение связи для точки В
 f_B = y(t) + zc * sp.sin(beta(t)) + (w/2 + yc)*sp.cos(beta(t)) - w - d
-f_B
-```
 
-
-
-
-$\displaystyle - d - w + z_{c} \sin{\left(\beta{\left(t \right)} \right)} + \left(\frac{w}{2} + y_{c}\right) \cos{\left(\beta{\left(t \right)} \right)} + y{\left(t \right)}$
-
-
-
-
-```python
 # Уравнение связи для точки А'
 f_A = w*sp.cos(beta(t))**2 + (Ld-z(t)+zc*sp.cos(beta(t))+0*(w/2-yc)*sp.sin(beta(t)))*sp.sin(beta(t))-(w+d)*sp.cos(beta(t))
-f_A
-```
 
-
-
-
-$\displaystyle w \cos^{2}{\left(\beta{\left(t \right)} \right)} - \left(d + w\right) \cos{\left(\beta{\left(t \right)} \right)} + \left(L \cos{\left(\beta_{0} \right)} - w \sin{\left(\beta_{0} \right)} + z_{c} \cos{\left(\beta{\left(t \right)} \right)} - z{\left(t \right)}\right) \sin{\left(\beta{\left(t \right)} \right)}$
-
-
-
-
-```python
 # Вторые производные уравнений связи
 d2f_B = sp.diff(f_B,t,2)
 d2f_A = sp.diff(f_A,t,2)
-```
 
-
-```python
-# ...выглядят эти производные довольно громоздко даже после попытки упрощения (метод simplify)
-d2f_A.simplify()
-```
-
-
-
-
-$\displaystyle 2 w \sin^{2}{\left(\beta{\left(t \right)} \right)} \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2} - w \sin{\left(2 \beta{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} \beta{\left(t \right)} - 2 w \cos^{2}{\left(\beta{\left(t \right)} \right)} \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2} + \left(d + w\right) \sin{\left(\beta{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} \beta{\left(t \right)} + \left(d + w\right) \cos{\left(\beta{\left(t \right)} \right)} \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2} - 2 \left(z_{c} \sin{\left(\beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} + \frac{d}{d t} z{\left(t \right)}\right) \cos{\left(\beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} - \left(z_{c} \sin{\left(\beta{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} \beta{\left(t \right)} + z_{c} \cos{\left(\beta{\left(t \right)} \right)} \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2} + \frac{d^{2}}{d t^{2}} z{\left(t \right)}\right) \sin{\left(\beta{\left(t \right)} \right)} - \left(L \cos{\left(\beta_{0} \right)} - w \sin{\left(\beta_{0} \right)} + z_{c} \cos{\left(\beta{\left(t \right)} \right)} - z{\left(t \right)}\right) \sin{\left(\beta{\left(t \right)} \right)} \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2} + \left(L \cos{\left(\beta_{0} \right)} - w \sin{\left(\beta_{0} \right)} + z_{c} \cos{\left(\beta{\left(t \right)} \right)} - z{\left(t \right)}\right) \cos{\left(\beta{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} \beta{\left(t \right)}$
-
-
-
-Коэффициенты при вторых производных обобщенных координат в уравнении связи $d^2f_A/dt^2 = 0$ -- матрица-строка $Q_A = [Q_{Ay}, Q_{Az}, Q_{A\beta}]$:
-
-
-```python
 QA = [ d2f_A.expand().coeff(var) for var in d2q ]
-QA
-```
 
+# Коэффициенты при вторых производных обобщенных координат в уравнении связи $d^2f_B/dt^2 = 0$ -- матрица-строка $Q_B = [Q_{By}, Q_{Bz}, Q_{B\beta}]$:
 
-
-
-$\displaystyle \left[ 0, \  - \sin{\left(\beta{\left(t \right)} \right)}, \  L \cos{\left(\beta_{0} \right)} \cos{\left(\beta{\left(t \right)} \right)} + d \sin{\left(\beta{\left(t \right)} \right)} - w \sin{\left(\beta_{0} \right)} \cos{\left(\beta{\left(t \right)} \right)} - 2 w \sin{\left(\beta{\left(t \right)} \right)} \cos{\left(\beta{\left(t \right)} \right)} + w \sin{\left(\beta{\left(t \right)} \right)} - z_{c} \sin^{2}{\left(\beta{\left(t \right)} \right)} + z_{c} \cos^{2}{\left(\beta{\left(t \right)} \right)} - z{\left(t \right)} \cos{\left(\beta{\left(t \right)} \right)}\right]$
-
-
-
-Коэффициенты при вторых производных обобщенных координат в уравнении связи $d^2f_B/dt^2 = 0$ -- матрица-строка $Q_B = [Q_{By}, Q_{Bz}, Q_{B\beta}]$:
-
-
-```python
 QB = [ d2f_B.expand().coeff(var) for var in d2q ]
-QB
-```
 
+# В правую часть уравнений движения пойдут все слагаемые, в которые не ходят вторые производные обобщенных координат. Используем для этого метод as_independent
 
-
-
-$\displaystyle \left[ 1, \  0, \  - \frac{w \sin{\left(\beta{\left(t \right)} \right)}}{2} - y_{c} \sin{\left(\beta{\left(t \right)} \right)} + z_{c} \cos{\left(\beta{\left(t \right)} \right)}\right]$
-
-
-
-В правую часть уравнений движения пойдут все слагаемые, в которые не ходят вторые производные обобщенных координат. Используем для этого метод [as_independent](https://docs.sympy.org/latest/modules/core.html#sympy.core.expr.Expr.as_independent). Эти слагаемые составляют $\Phi_B$:
-
-
-```python
 Phi_B = d2f_B.expand().as_independent(*d2q)[0].simplify()
-Phi_B
-```
 
-
-
-
-$\displaystyle - \left(\frac{w \cos{\left(\beta{\left(t \right)} \right)}}{2} + y_{c} \cos{\left(\beta{\left(t \right)} \right)} + z_{c} \sin{\left(\beta{\left(t \right)} \right)}\right) \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2}$
-
-
-
-
-```python
 Phi_A = d2f_A.expand().as_independent(*d2q)[0].simplify()
-Phi_A
-```
 
+# Переход от символьных выражений к их числовым значениям (подстановка)
+# При помощи функции lambdify определим функцию, которая будет вычислять значение этого выражения 
+# для заданных числовых параметров. 
+# Первый аргумент функции lambdify -- список символов, которые содержаться в вычисляемом выражении, второй аргумент -- само символьное выражение.
 
-
-
-$\displaystyle \left(\frac{L \sin{\left(\beta_{0} - \beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)}}{2} - \frac{L \sin{\left(\beta_{0} + \beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)}}{2} + d \cos{\left(\beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} + \frac{w \cos{\left(\beta_{0} - \beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)}}{2} - \frac{w \cos{\left(\beta_{0} + \beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)}}{2} + w \cos{\left(\beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} - 2 w \cos{\left(2 \beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} - 2 z_{c} \sin{\left(2 \beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} + z{\left(t \right)} \sin{\left(\beta{\left(t \right)} \right)} \frac{d}{d t} \beta{\left(t \right)} - 2 \cos{\left(\beta{\left(t \right)} \right)} \frac{d}{d t} z{\left(t \right)}\right) \frac{d}{d t} \beta{\left(t \right)}$
-
-
-
-## Переход от символьных выражений к их числовым значениям (подстановка)
-
-В полученных выше аналитических выражениях при численном интегрировании необходимо выполнять замены символов их соответсвующими числовыми значениями. Для замены можно использоваться метод subs выражения sympy, например, для подстановки в выражение Phi_B значений $w = 0.1$ и $y_c=0$ можно вызвать метод subs, передав ему список замен:
-
-
-```python
-Phi_B.subs([ [w, 0.1], [yc, 0.0] ])
-```
-
-
-
-
-$\displaystyle - \left(z_{c} \sin{\left(\beta{\left(t \right)} \right)} + 0.05 \cos{\left(\beta{\left(t \right)} \right)}\right) \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2}$
-
-
-
-В эту же функцию можно передать словарь:
-
-
-```python
-Phi_B.subs({w: 0.1, yc: 0.0})
-```
-
-
-
-
-$\displaystyle - \left(z_{c} \sin{\left(\beta{\left(t \right)} \right)} + 0.05 \cos{\left(\beta{\left(t \right)} \right)}\right) \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2}$
-
-
-
-Наиболее быстрый способ -- использование функции [lambdify](https://docs.sympy.org/latest/modules/utilities/lambdify.html). Возьмем для примера выражение Phi_B, которое зависит от угла поврота, угловой скорости наноспутника и параметров w, yc, zc
-
-
-```python
-Phi_B
-```
-
-
-
-
-$\displaystyle - \left(\frac{w \cos{\left(\beta{\left(t \right)} \right)}}{2} + y_{c} \cos{\left(\beta{\left(t \right)} \right)} + z_{c} \sin{\left(\beta{\left(t \right)} \right)}\right) \left(\frac{d}{d t} \beta{\left(t \right)}\right)^{2}$
-
-
-
-При помощи функции lambdify определим функцию, которая будет вычислять значение этого выражения для заданных числовых параметров. Первый аргумент функции lambdify -- список символов, которые содержаться в вычисляемом выражении, второй аргумент -- само символьное выражение.
-
-
-```python
 n_Phi_B = lambdify( [beta(t), sp.diff(beta(t),t), w, yc, zc], Phi_B )
-```
 
-Результатом работы lambdify является объект типа функция, которую можно вызвать с заданными числовыми значениями
+# Результатом работы lambdify является объект типа функция, которую можно вызвать с заданными числовыми значениями
 
-
-```python
-n_Phi_B(0.1,0.1,0.01,0.1,0.1)
-```
-
-
-
-
-$\displaystyle -0.0011445877901887554$
-
-
-
-Для удобства, чтобы вручную не перечислять параметры выражений, определим список, который будет включать в себя и вектор состояния наноспутника $q=(y,z,\beta,\dot{y},\dot{z},\dot{\beta})$ и его параметры. Этот список будет списком аргументов всех вычисляемых функций, которые будут построены на основе символьных выражений при помощи [lambdify](https://docs.sympy.org/latest/modules/utilities/lambdify.html)
-
-
-```python
 # Определим список параметров наноспутника  
-
 # Наноспутника типоразмера 3U массой 3 кг, с центром масс, 
 # смещенным на 10 мм от продольной оси и на 50 мм от середины к толкателю
 # Максимальный зазор между наноспутником и контейнером 1 мм
 # Толкатель работает на ходе 220 мм
 params = {m: 3.0, J: 0.021, L: 0.340, w: 0.100, d: 0.001, yc: 0.010, zc: 0.340/2.0 - 0.05, P0: 7, Pk: 2, h: 0.220}
-
 
 def get_q0(params):
     '''
@@ -615,31 +430,16 @@ def get_q0(params):
     z0 = (-0.5*w*np.sin(b0)+zc*np.cos(b0)-yc*np.sin(b0)).subs(params)
     return [y0, z0, b0]
 
-
 # Вектор начальных условий, зависящий от параметров наноспутника и контейнера
 q0 = get_q0(params)
 # Добавим к этому списку нулевые начальные скорости
 q0.extend([0.0,0.0,0.0])
 # Добавим в словарь параметров вычисляемое значение beta_0
 params[beta0] = q0[2]
-```
 
-
-```python
-# а теперь определим объединенный список переменных состояния и параметров 
+# объединенный список переменных состояния и параметров 
 state_and_params = [*q,*dq,*params.keys()]
-state_and_params
-```
 
-
-
-
-$\displaystyle \left[ y{\left(t \right)}, \  z{\left(t \right)}, \  \beta{\left(t \right)}, \  \frac{d}{d t} y{\left(t \right)}, \  \frac{d}{d t} z{\left(t \right)}, \  \frac{d}{d t} \beta{\left(t \right)}, \  m, \  J, \  L, \  w, \  d, \  y_{c}, \  z_{c}, \  P_{0}, \  P_{k}, \  h, \  \beta_{0}\right]$
-
-
-
-
-```python
 # Первые три строки матрицы коэффициентов правой части уравнений движения
 # Символьное выражение sympy (матрица)
 mass_matrix = sp.Matrix([[m, 0, 0, -sp.cos(beta(t)), 1],
@@ -649,66 +449,29 @@ mass_matrix = sp.Matrix([[m, 0, 0, -sp.cos(beta(t)), 1],
 # Создаем функцию-вычислитель для этого блока матрицы
 n_mass_matrix = lambdify(state_and_params, mass_matrix)
 
-# Исходное символьное выражение
-mass_matrix
-```
-
-
-
-
-$\displaystyle \left[\begin{matrix}m & 0 & 0 & - \cos{\left(\beta{\left(t \right)} \right)} & 1\\0 & m & 0 & - \sin{\left(\beta{\left(t \right)} \right)} & 0\\0 & 0 & J & L - z_{c} & z_{c} \cos{\left(\beta{\left(t \right)} \right)} - \left(\frac{w}{2} + y_{c}\right) \sin{\left(\beta{\left(t \right)} \right)}\end{matrix}\right]$
-
-
-
-
-```python
 # Вычисляем значение mass_matrix для конкретных значений
 # Для примера передаем в функцию n_mass_matrix вектор начального состояния наноспутника q0, определенный выше, 
 # и значения параметров  
 n_mass_matrix(*[*q0,*params.values()])
-```
 
-
-
-
-    array([[ 3.00000000e+00,  0.00000000e+00,  0.00000000e+00,
-            -9.99995671e-01,  1.00000000e+00],
-           [ 0.00000000e+00,  3.00000000e+00,  0.00000000e+00,
-            -2.94244971e-03,  0.00000000e+00],
-           [ 0.00000000e+00,  0.00000000e+00,  2.10000000e-02,
-             2.20000000e-01,  1.19822934e-01]])
-
-
-
-
-```python
 # Матрица коэффициентов уравений связей 
 Q_matrix = sp.Matrix([QA, QB])
 # и её вычисляемое выражение 
 n_Q_matrix = lambdify(state_and_params, Q_matrix)
-```
 
-
-```python
 # Матрица правых частей уравнений связей
 Phi_matrix = sp.Matrix([-Phi_A, -Phi_B])
 # вычислитель
 n_Phi_matrix = lambdify(state_and_params, Phi_matrix)
-```
 
-
-```python
 # Первые три строки матрицы-столбца правой части (активные силы и момент, действующие на наноспутник)
 n_FyzMx = lambdify(state_and_params,FyzMx)
 
 # Координата z точки B
 n_zb = lambdify(state_and_params, zb)
-```
 
-Собираем матрицу коэффицентов левой части дифференциальных уравнений и матрицу-столбец правой части
+# Собираем матрицу коэффицентов левой части дифференциальных уравнений и матрицу-столбец правой части
 
-
-```python
 def get_A_matrix(t, qt, params, stage):
     A = np.zeros((5,5),dtype=float)
     A[0:3,:]   = n_mass_matrix(*[*qt,*params.values()])
@@ -737,14 +500,11 @@ def get_B_matrix(t, qt, params, stage):
         B[3] = 0
         B[4] = 0 
     return B    
-```
 
-## Численное интегрирование
+# Численное интегрирование
 
-#### Функция правых частей дифференциальных уравнений
+# Функция правых частей дифференциальных уравнений
 
-
-```python
 def dydt(t,y):
     A = get_A_matrix(t, y, params, STAGE)
     B = get_B_matrix(t, y, params, STAGE)
@@ -756,12 +516,7 @@ def dydt(t,y):
     # записываем ускорения    
     res[3:6] = X[0:3]
     return res
-```
 
-#### Функции для остановки интегрирования при выполнении некоторых условий
-
-
-```python
 def Ra_eq_0(t, y):
     # Функция-"детектор", передаваемая в интегратор (параметр events), 
     # для остановки процесса интегрирования    
@@ -790,10 +545,8 @@ def Rb_eq_0(t, y):
 Rb_eq_0.direction = -1
 # функция-детектор активна
 Rb_eq_0.terminal  = True
-```
 
 
-```python
 STAGE = 1
 # Интегрируем пока Ra > 0
 sol_1 = solve_ivp(dydt, [0, 0.5], q0, events = [Ra_eq_0], 
@@ -808,12 +561,9 @@ STAGE = 3
 # Свободное движение наноспутника
 sol_3 = solve_ivp(dydt, [sol_2.t[-1], sol_2.t[-1]+0.5], sol_2.y[:,-1], 
                   rtol = 1e-6, method="LSODA", minstep=0.01)
-```
 
-#### Зависимость линейной скорости наноспутника от времени
+# Зависимость линейной скорости наноспутника от времени
 
-
-```python
 plt.plot(sol_1.t, sol_1.y[4]);
 plt.plot(sol_2.t, sol_2.y[4]);
 plt.plot(sol_3.t, sol_3.y[4]);
@@ -821,12 +571,9 @@ plt.xlabel('t, c');
 plt.ylabel('$V_z$, м/с');
 plt.grid(linestyle=':')
 plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)']);
-```
 
-#### Зависимость угловой скорости наноспутника от времени
+# Зависимость угловой скорости наноспутника от времени
 
-
-```python
 plt.plot(sol_1.t, sol_1.y[5]*180/np.pi);
 plt.plot(sol_2.t, sol_2.y[5]*180/np.pi);
 plt.plot(sol_3.t, sol_3.y[5]*180/np.pi);
@@ -834,68 +581,53 @@ plt.xlabel('t, c');
 plt.ylabel('$\omega$, градус/с');
 plt.grid(linestyle=':')
 plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)']);
-```
 
-#### Проверяем уравнения связей
+# Проверяем уравнения связей
 
-
-```python
 n_f_B=lambdify(state_and_params, f_B)
 sol_f_B = [ [ n_f_B(*[*yi,*params.values()]) for yi in sol.y.transpose()] for sol in (sol_1,sol_2,sol_3) ]
 
-plt.plot(sol_1.t, sol_f_B[0]);
-plt.plot(sol_2.t, sol_f_B[1]);
-plt.plot(sol_3.t, sol_f_B[2]);
-plt.xlabel('t, c');
-plt.ylabel('$f_B$, м');
+plt.plot(sol_1.t, sol_f_B[0])
+plt.plot(sol_2.t, sol_f_B[1])
+plt.plot(sol_3.t, sol_f_B[2])
+plt.xlabel('t, c')
+plt.ylabel('$f_B$, м')
 plt.grid(linestyle=':')
 plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)']);
-```
 
-```python
 n_f_A=lambdify(state_and_params, f_A)
 sol_f_A = [ [ n_f_A(*[*yi,*params.values()]) for yi in sol.y.transpose()] for sol in (sol_1,sol_2,sol_3) ]
 
-plt.plot(sol_1.t, sol_f_A[0]);
-plt.plot(sol_2.t, sol_f_A[1]);
-plt.plot(sol_3.t, sol_f_A[2]);
-plt.xlabel('t, c');
-plt.ylabel('$f_A$, м');
+plt.plot(sol_1.t, sol_f_A[0])
+plt.plot(sol_2.t, sol_f_A[1])
+plt.plot(sol_3.t, sol_f_A[2])
+plt.xlabel('t, c')
+plt.ylabel('$f_A$, м')
 plt.grid(linestyle=':')
-plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)']);
+plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)'])
 
-```
-#### Перемещение точки $z_B$
+# Перемещение точки $z_B$
 
-```python
 sol_zb = [ [ n_zb(*[*yi,*params.values()]) for yi in sol.y.transpose()] for sol in (sol_1,sol_2,sol_3) ]
 
-plt.plot(sol_1.t, sol_zb[0]);
-plt.plot(sol_2.t, sol_zb[1]);
-plt.plot(sol_3.t, sol_zb[2]);
-plt.xlabel('t, c');
-plt.ylabel('$z_B$, м');
+plt.plot(sol_1.t, sol_zb[0])
+plt.plot(sol_2.t, sol_zb[1])
+plt.plot(sol_3.t, sol_zb[2])
+plt.xlabel('t, c')
+plt.ylabel('$z_B$, м')
 plt.grid(linestyle=':')
-plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)']);
+plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)'])
 
-# Уравнение связи fa = 0 работает на первом этапе 
-```
+# Сила толкателя, действующая на наноспутник
 
-
-#### Сила толкателя, действующая на наноспутник
-
-
-```python
 n_P = lambdify(state_and_params, P)
 
 sol_P = [ [ n_P(*[*yi,*params.values()]) for yi in sol.y.transpose()] for sol in (sol_1,sol_2,sol_3) ]
 
-plt.plot(sol_1.t, sol_P[0]);
-plt.plot(sol_2.t, sol_P[1]);
-plt.plot(sol_3.t, sol_P[2]);
-plt.xlabel('t, c');
-plt.ylabel('$P$, Н');
+plt.plot(sol_1.t, sol_P[0])
+plt.plot(sol_2.t, sol_P[1])
+plt.plot(sol_3.t, sol_P[2])
+plt.xlabel('t, c')
+plt.ylabel('$P$, Н')
 plt.grid(linestyle=':')
-plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)']);
-```
-
+plt.legend(['Этап 1','Этап 2 ($R_A=0$)','Этап 3 ($R_A=0$, $R_B=0$)'])
