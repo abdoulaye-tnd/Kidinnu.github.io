@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: list
 title: Модель движения наноспутника 
 tags: [механика,космонавтика,python]
