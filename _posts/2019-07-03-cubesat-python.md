@@ -11,3 +11,4 @@ tags: [механика,космонавтика,python]
 
 ![Наноспутник](http://classmech.ru/assets/img/blog/cubesat.png)
 
+ 
