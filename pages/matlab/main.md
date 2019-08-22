@@ -7,9 +7,10 @@ accent_image: /assets/img/Matlab_Logo.png
 
 ## Презентации
 
-- [Основы MATLAB. Типы данных.](https://drive.google.com/file/d/0B7M35ooN-e8_OTEyZWRmNWItZmIyZi00ZDRkLWE4YzQtMzYxZTRlMDZkMzZi/view?usp=sharing)
-- [Основы MATLAB. Функции. ](https://drive.google.com/file/d/0B7M35ooN-e8_ZmQ3MWM0OTAtNDFiMi00MDhhLTlkYzgtNTk4ZDUzZGU1Yzgx/view?usp=sharing)
-- [Основы MATLAB. Программирование. ](https://drive.google.com/file/d/1TnfI0_Wg5XLTAkutqGWgjV9PxJNYj0eS/view?usp=sharing)
+- [Типы данных](https://drive.google.com/file/d/0B7M35ooN-e8_OTEyZWRmNWItZmIyZi00ZDRkLWE4YzQtMzYxZTRlMDZkMzZi/view?usp=sharing)
+- [Функции](https://drive.google.com/file/d/0B7M35ooN-e8_ZmQ3MWM0OTAtNDFiMi00MDhhLTlkYzgtNTk4ZDUzZGU1Yzgx/view?usp=sharing)
+- [Программирование](https://drive.google.com/file/d/1TnfI0_Wg5XLTAkutqGWgjV9PxJNYj0eS/view?usp=sharing)
+- [Графика](https://drive.google.com/file/d/1ajc_mPXFfnY971upOqPmWGNaIcR0PScS/view?usp=sharing)
 
 ## Примеры
 
