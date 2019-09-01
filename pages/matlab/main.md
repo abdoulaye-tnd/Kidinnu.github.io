@@ -9,7 +9,8 @@ accent_image: /assets/img/Matlab_Logo.png
 
 - [Типы данных](https://drive.google.com/file/d/0B7M35ooN-e8_OTEyZWRmNWItZmIyZi00ZDRkLWE4YzQtMzYxZTRlMDZkMzZi/view?usp=sharing)
 - [Функции](https://drive.google.com/file/d/0B7M35ooN-e8_ZmQ3MWM0OTAtNDFiMi00MDhhLTlkYzgtNTk4ZDUzZGU1Yzgx/view?usp=sharing)
-- [Программирование](https://drive.google.com/file/d/1TnfI0_Wg5XLTAkutqGWgjV9PxJNYj0eS/view?usp=sharing)
+- [Файл-функции и скрипты](https://drive.google.com/file/d/1TnfI0_Wg5XLTAkutqGWgjV9PxJNYj0eS/view?usp=sharing)
+- [Программирование](https://drive.google.com/file/d/1ZpX3GIBz_BQwzq0C04f7FUYS2pcHrxCS/view?usp=sharing)
 - [Графика](https://drive.google.com/file/d/1ajc_mPXFfnY971upOqPmWGNaIcR0PScS/view?usp=sharing)
 
 ## Примеры
@@ -23,4 +24,4 @@ accent_image: /assets/img/Matlab_Logo.png
 ## Лабораторные работы
 
 - [Сборник заданий для лабораторных работ (курс "Интегрированные математические пакеты").](./labs.md) 
-
+- [Сборник заданий для лабораторных работ в формате PDF](https://drive.google.com/file/d/1MCllOBBLNtFwfJMVrEQFDN5Bp6prMvFE/view?usp=sharing)
