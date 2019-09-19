@@ -7,9 +7,11 @@ published: true
 
 ## 2019
 
-1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Dynamic similitude for small-scale re-entry experiment](https://doi.org/10.1088/1742-6596/1210/1/012148). Journal of Physics: Conference Series, 1210, 12148. 
+1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Rotating tethered system for active space debris removal](https://doi.org/10.1088/1742-6596/1260/11/112032). J. Phys.: Conf. Ser. 1260 112032.
 
-1. V. S. Aslanov, V. V. Yudintsev, [Chaos in tethered tug-debris system induced by attitude oscillations of debris](https://arc.aiaa.org/doi/10.2514/1.G004162). Journal of Guidance, Control, and Dynamics. Publication Date (online): January 30, 2019.
+1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Dynamic similitude for small-scale re-entry experiment](https://doi.org/10.1088/1742-6596/1210/1/012148). Phys.: Conf. Ser. 1210, 12148. 
+
+1. V. S. Aslanov, V. V. Yudintsev, [Chaos in tethered tug-debris system induced by attitude oscillations of debris](https://arc.aiaa.org/doi/10.2514/1.G004162). Journal of Guidance, Control, and Dynamics. Vol. 42, No. 7, July 2019.
 
 ## 2018
 
