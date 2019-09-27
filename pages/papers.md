@@ -7,7 +7,7 @@ published: true
 
 ## 2019
 
-1. V. I. Trushlyakov, V. V. Yudintsev. "Rotary Space Tether System for Active Debris Removal," AIAA Journal, (2019), accessed September 27, 2019. doi: https://doi.org/10.2514/1.G004615
+1. V. I. Trushlyakov, V. V. Yudintsev. "[Rotary Space Tether System for Active Debris Removal](https://doi.org/10.2514/1.G004615)," Journal of Guidance, Control, and Dynamics, (2019), accessed September 27, 2019. doi: [https://doi.org/10.2514/1.G004615](https://doi.org/10.2514/1.G004615)
 
 1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Dynamic similitude for small-scale re-entry experiment](https://doi.org/10.1088/1742-6596/1210/1/012148). Phys.: Conf. Ser. 1210, 12148. 
 
