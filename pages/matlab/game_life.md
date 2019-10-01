@@ -131,15 +131,17 @@ function neighbours = get_neighbours_cells(cell)
 
 Файл-функция **cell_in_colony.m**
 
-Файл-функция **cell_in_colony** определения принадлежности клетки **cell** колонии **colony** 
+Файл-функция **cell_in_colony** определения принадлежности клетки **cell** колонии **colony**. Для определения принадлежности клетки **cell** колонии **colony**, список координат клеток колонии **colony** рассматривается как множество пар координат. Определяется пересечение этого множество с множеством, состоящем из одной пары координат **cell**. 
 
 ~~~matlab
 %
 % Принадлежит ли клетка cell колонии
 %
 function res = cell_in_colony(cell, colony)
-    
-    res = ~isempty(intersect(cell,colony,'rows'));
-    
+    % Пересечение множества colony с множеством cell
+    сс = intersect(cell,colony,'rows')
+    % Если результат это пустое множество, 
+    % то слетки cell в колонии colony нет
+    res = ~isempty(сс);        
 end
 ~~~
