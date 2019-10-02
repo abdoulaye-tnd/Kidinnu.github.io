@@ -57,17 +57,20 @@ end
 Функция **next_generation** возвращает следующее поколение для **colony** 
 
 ~~~matlab
-function next_gen = next_generation(colony)
-    
+function next_gen = next_generation(colony)    
     next_gen = [];
+    % Списко клеток -- ареал колонии 
     area = get_colony_area(colony);
+    % Для каждой клетки из ареала
     for i=1:size(area,1)
         cell = area(i,:);
+        % Количество соседей у клетки i из ареала
         n = count_cell_neighbours(cell, colony);
+        % Если 3 или (2 и клетка занята), 
+        % то добавляем клетку в новое поколение
         if n == 3 || (n == 2 && cell_in_colony(cell, colony))
             next_gen = [next_gen; cell];
-        end
-        
+        end        
     end
 ~~~
 
@@ -80,11 +83,13 @@ function next_gen = next_generation(colony)
 % Список клеток, принадлежащих колонии и смежных с клетками колонии
 %
 function cells = get_colony_area(colony)
-
+    % результат -- это все клетки колонии
     cells = colony;
-    
+    % и клетки смежные с клетками колонии
     for i=1:size(colony,1)
-        cells = union(cells, get_neighbours_cells( colony(i,:) ), 'rows');
+        % список ближайших для клетки i
+        nearest = get_neighbours_cells( colony(i,:) );
+        cells = union(cells, nearest, 'rows');
     end
 ~~~
 
@@ -97,13 +102,13 @@ function cells = get_colony_area(colony)
 % Количество соседей у клетки с координатами cell = [x, y]
 %
 function count = count_cell_neighbours(cell, colony)
-    
-    neighbours = get_neighbours_cells(cell);
-    
+    % 8 ближайших клеток
+    neighbours = get_neighbours_cells(cell);    
     count = 0;
-    
+    % Для каждой из 8 ближайших    
     for i=1:size(neighbours,1)
-        
+        % Если ближайшая клетка принадлежит колонии (занята),
+        % то увеличиваем счетчик соседей на 1
         if cell_in_colony(neighbours(i,:), colony)
             count = count + 1;
         end
