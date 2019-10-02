@@ -5,18 +5,14 @@ published: true
 accent_image: /assets/img/Matlab_Logo.png
 ---
 
-
-~~~
-
-~~~
->>>>>>>+HEAD
-айл-скриОсновной файл-скрипт (**main.m**)
+Основной файл-скрипт (**main.m**)
 
 ~~~matlab
-
 % Начальное состояние колонии
->>>>>>>+master
- 1;
+cells = [ 1, 1; 
+          1, 2;
+          1, 3;
+          2, 1;
           3, 2;          
           10 10;
           10 11;
@@ -43,7 +39,6 @@ for i=1:n_gen
     cells_vertices = repmat(cells,1,4)+repmat(vert,size(cells,1),1);
     x = (cells_vertices(:,1:2:end))';
     y = (cells_vertices(:,2:2:end))';    
-<<<<<<< HEAD
     % нарисовать клетки
     patch(x,y,'r');
     % включить сетку
