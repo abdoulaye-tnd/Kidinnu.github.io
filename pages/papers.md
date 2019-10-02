@@ -7,9 +7,13 @@ published: true
 
 ## 2019
 
-1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Dynamic similitude for small-scale re-entry experiment](https://doi.org/10.1088/1742-6596/1210/1/012148). Journal of Physics: Conference Series, 1210, 12148. 
+1. V. I. Trushlyakov, V. V. Yudintsev. "[Rotary Space Tether System for Active Debris Removal](https://doi.org/10.2514/1.G004615)," Journal of Guidance, Control, and Dynamics, (2019), accessed September 27, 2019. doi: [https://doi.org/10.2514/1.G004615](https://doi.org/10.2514/1.G004615)
 
-1. V. S. Aslanov, V. V. Yudintsev, [Chaos in tethered tug-debris system induced by attitude oscillations of debris](https://arc.aiaa.org/doi/10.2514/1.G004162). Journal of Guidance, Control, and Dynamics. Publication Date (online): January 30, 2019.
+1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Dynamic similitude for small-scale re-entry experiment](https://doi.org/10.1088/1742-6596/1210/1/012148). Phys.: Conf. Ser. 1210, 12148. 
+
+1. V. I. Trushlyakov, V. V. Yudintsev. (2019). [Rotating tethered system for active space debris removal](https://doi.org/10.1088/1742-6596/1260/11/112032). J. Phys.: Conf. Ser. 1260 112032.
+
+1. V. S. Aslanov, V. V. Yudintsev, [Chaos in tethered tug-debris system induced by attitude oscillations of debris](https://arc.aiaa.org/doi/10.2514/1.G004162). Journal of Guidance, Control, and Dynamics. Vol. 42, No. 7, July 2019.
 
 ## 2018
 
@@ -45,7 +49,7 @@ published: true
 
 1. V.S. Aslanov, A.K. Misra, V.V. Yudintsev, [Chaotic motions of tethered satellites with low thrust](https://www.researchgate.net/publication/310491122_Chaotic_Motions_of_Tethered_Satellites_with_Low_Thrust), in: 67th Int. Astronaut. Congr. IAC 2016; Guadalajara; Mex. 26 Sept. 2016 through 30 Sept. 2016, International Astronautical Federation, IAF, 2016.
 d
-1. [Способ проведения лётно-конструкторских испытаний автономного стыковочного модуля для очистки орбит от космического мусора](http://www.findpatent.ru/patent/264/2643020.html) Трушляков В.И., Юдинцев В.В., Макаров Ю.Н., Шатров Я.Т. Патент на изобретение RUS 2643020 06.09.2016.
+1. [Способ проведения лётно-конструкторских испытаний автономного стыковочного модуля для очистки орбит от космического мусора](https://patents.google.com/patent/RU2643020C1/ru) Трушляков В.И., Юдинцев В.В., Макаров Ю.Н., Шатров Я.Т. Патент на изобретение RUS 2643020 06.09.2016. [Патент отмечен дипломом ФИПС и Роспатента - «100 лучших изобретений России-2018»](https://www.omgtu.ru/l/n/?eid=46438). 
 
 ## 2015
 
