@@ -14,10 +14,12 @@ accent_image: /assets/img/Matlab_Logo.png
 - [Графика](https://drive.google.com/file/d/1ajc_mPXFfnY971upOqPmWGNaIcR0PScS/view?usp=sharing)
 - [Интегрирование ОДУ: движение материальной точки в поле силы тяжести.](https://drive.google.com/file/d/1IcJOh8fUGDosvWMgfM0o7GSjG3E13XeB/view?usp=sharing)
 
+- [Игра "Жизнь"](https://drive.google.com/file/d/1JjoxfDiKnI2QNIlxnSswkmmCHC0kNlcy/view?usp=sharing)
+- [Относительное орбитальное движение.](https://drive.google.com/file/d/1v7Tq9Y7FwSw_kPvG34kgO5I0tnQPO9ke/view?usp=sharing)
+
 ## Примеры
 
-- [Относительное орбитальное движение.](https://drive.google.com/file/d/1v7Tq9Y7FwSw_kPvG34kgO5I0tnQPO9ke/view?usp=sharing)
-- [Игра "Жизнь".](https://drive.google.com/file/d/1JjoxfDiKnI2QNIlxnSswkmmCHC0kNlcy/view?usp=sharing)
+- [Игра "Жизнь"](./game_life.md)
 - [Продольные колебания стержня.](./rod.md)
 - [Построение модели физического маятника в SIMULINK.](https://youtu.be/c1VFX-BCTpk)
 
