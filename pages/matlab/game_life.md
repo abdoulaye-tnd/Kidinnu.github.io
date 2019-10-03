@@ -59,7 +59,7 @@ end
 ~~~matlab
 function next_gen = next_generation(colony)    
     next_gen = [];
-    % Списко клеток -- ареал колонии 
+    % Список клеток -- ареал колонии 
     area = get_colony_area(colony);
     % Для каждой клетки из ареала
     for i=1:size(area,1)
@@ -101,19 +101,11 @@ function cells = get_colony_area(colony)
 %
 % Количество соседей у клетки с координатами cell = [x, y]
 %
-function count = count_cell_neighbours(cell, colony)
+function count = count_cell_neighbours(cell, colony)    
     % 8 ближайших клеток
-    neighbours = get_neighbours_cells(cell);    
-    count = 0;
-    % Для каждой из 8 ближайших    
-    for i=1:size(neighbours,1)
-        % Если ближайшая клетка принадлежит колонии (занята),
-        % то увеличиваем счетчик соседей на 1
-        if cell_in_colony(neighbours(i,:), colony)
-            count = count + 1;
-        end
-        
-    end
+    neighbours = get_neighbours_cells(cell);                
+    count = sum(arrayfun(@(i) cell_in_colony(neighbours(i,:), colony), 1:size(neighbours,1)));
+end    
 ~~~
 
 Файл-функция **get_neighbours_cells.m**
@@ -127,8 +119,8 @@ function count = count_cell_neighbours(cell, colony)
 function neighbours = get_neighbours_cells(cell)
     
     neighbours = [-1 -1; 0 -1; 1 -1;
-        -1  0;       1  0;
-        -1  1; 0  1; 1  1];
+                  -1  0;       1  0;
+                  -1  1; 0  1; 1  1];
     
     neighbours = repmat(cell,8,1) + neighbours;
 ~~~   
@@ -147,5 +139,16 @@ function res = cell_in_colony(cell, colony)
     % Если результат это пустое множество, 
     % то слетки cell в колонии colony нет
     res = ~isempty(сс);        
+end
+~~~
+
+Короткая форма функции **cell_in_colony**
+
+~~~matlab
+%
+% Принадлежит ли клетка cell колонии
+%
+function res = cell_in_colony(cell, colony)   
+  res = ~isempty(intersect(cell,colony,'rows'));
 end
 ~~~
