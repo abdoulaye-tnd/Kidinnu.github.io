@@ -5,18 +5,14 @@ published: true
 accent_image: /assets/img/Matlab_Logo.png
 ---
 
-
-~~~
-
-~~~
->>>>>>>+HEAD
-айл-скриОсновной файл-скрипт (**main.m**)
+Основной файл-скрипт (**main.m**)
 
 ~~~matlab
-
 % Начальное состояние колонии
->>>>>>>+master
- 1;
+cells = [ 1, 1; 
+          1, 2;
+          1, 3;
+          2, 1;
           3, 2;          
           10 10;
           10 11;
@@ -43,7 +39,6 @@ for i=1:n_gen
     cells_vertices = repmat(cells,1,4)+repmat(vert,size(cells,1),1);
     x = (cells_vertices(:,1:2:end))';
     y = (cells_vertices(:,2:2:end))';    
-<<<<<<< HEAD
     % нарисовать клетки
     patch(x,y,'r');
     % включить сетку
@@ -62,17 +57,20 @@ end
 Функция **next_generation** возвращает следующее поколение для **colony** 
 
 ~~~matlab
-function next_gen = next_generation(colony)
-    
+function next_gen = next_generation(colony)    
     next_gen = [];
+    % Список клеток -- ареал колонии 
     area = get_colony_area(colony);
+    % Для каждой клетки из ареала
     for i=1:size(area,1)
         cell = area(i,:);
+        % Количество соседей у клетки i из ареала
         n = count_cell_neighbours(cell, colony);
+        % Если 3 или (2 и клетка занята), 
+        % то добавляем клетку в новое поколение
         if n == 3 || (n == 2 && cell_in_colony(cell, colony))
             next_gen = [next_gen; cell];
-        end
-        
+        end        
     end
 ~~~
 
@@ -85,11 +83,13 @@ function next_gen = next_generation(colony)
 % Список клеток, принадлежащих колонии и смежных с клетками колонии
 %
 function cells = get_colony_area(colony)
-
+    % результат -- это все клетки колонии
     cells = colony;
-    
+    % и клетки смежные с клетками колонии
     for i=1:size(colony,1)
-        cells = union(cells, get_neighbours_cells( colony(i,:) ), 'rows');
+        % список ближайших для клетки i
+        nearest = get_neighbours_cells( colony(i,:) );
+        cells = union(cells, nearest, 'rows');
     end
 ~~~
 
@@ -101,19 +101,11 @@ function cells = get_colony_area(colony)
 %
 % Количество соседей у клетки с координатами cell = [x, y]
 %
-function count = count_cell_neighbours(cell, colony)
-    
-    neighbours = get_neighbours_cells(cell);
-    
-    count = 0;
-    
-    for i=1:size(neighbours,1)
-        
-        if cell_in_colony(neighbours(i,:), colony)
-            count = count + 1;
-        end
-        
-    end
+function count = count_cell_neighbours(cell, colony)    
+    % 8 ближайших клеток
+    neighbours = get_neighbours_cells(cell);                
+    count = sum(arrayfun(@(i) cell_in_colony(neighbours(i,:), colony), 1:size(neighbours,1)));
+end    
 ~~~
 
 Файл-функция **get_neighbours_cells.m**
@@ -127,8 +119,8 @@ function count = count_cell_neighbours(cell, colony)
 function neighbours = get_neighbours_cells(cell)
     
     neighbours = [-1 -1; 0 -1; 1 -1;
-        -1  0;       1  0;
-        -1  1; 0  1; 1  1];
+                  -1  0;       1  0;
+                  -1  1; 0  1; 1  1];
     
     neighbours = repmat(cell,8,1) + neighbours;
 ~~~   
@@ -147,5 +139,16 @@ function res = cell_in_colony(cell, colony)
     % Если результат это пустое множество, 
     % то слетки cell в колонии colony нет
     res = ~isempty(сс);        
+end
+~~~
+
+Короткая форма функции **cell_in_colony**
+
+~~~matlab
+%
+% Принадлежит ли клетка cell колонии
+%
+function res = cell_in_colony(cell, colony)   
+  res = ~isempty(intersect(cell,colony,'rows'));
 end
 ~~~
