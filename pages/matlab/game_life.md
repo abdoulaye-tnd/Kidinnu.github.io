@@ -5,7 +5,7 @@ published: true
 accent_image: /assets/img/Matlab_Logo.png
 ---
 
-Основной файл-скрипт (**main.m**)
+## Основной файл-скрипт (**main.m**)
 
 ~~~matlab
 % Начальное состояние колонии
@@ -52,7 +52,7 @@ for i=1:n_gen
 end
 ~~~
 
-Файл-функция **next_generation.m**
+## Файл-функция **next_generation.m**
 
 Функция **next_generation** возвращает следующее поколение для **colony** 
 
@@ -74,7 +74,7 @@ function next_gen = next_generation(colony)
     end
 ~~~
 
-Файл-функция **get_colony_area.m**
+## Файл-функция **get_colony_area.m**
 
 Функция **get_colony_area**, возвращающая ареал колонии **colony**
 
@@ -93,7 +93,7 @@ function cells = get_colony_area(colony)
     end
 ~~~
 
-Файл-функция **count_cell_neighbours.m**
+## Файл-функция **count_cell_neighbours.m**
 
 Функция **count_cell_neighbours** определяет количество соседей у клетки **cell** в колонии **colony** 
 
@@ -108,7 +108,7 @@ function count = count_cell_neighbours(cell, colony)
 end    
 ~~~
 
-Файл-функция **get_neighbours_cells.m**
+## Файл-функция **get_neighbours_cells.m**
 
 Функция **get_neighbours_cells** Координаты смежных (ближайших восьми) клеток для клетки  **cell**.
 
@@ -125,7 +125,7 @@ function neighbours = get_neighbours_cells(cell)
     neighbours = repmat(cell,8,1) + neighbours;
 ~~~   
 
-Файл-функция **cell_in_colony.m**
+## Файл-функция **cell_in_colony.m**
 
 Функция **cell_in_colony** определяет принадлежность клетки **cell** колонии **colony**. Для определения принадлежности клетки **cell** колонии **colony**, список пар координат **colony** рассматривается как множество пар координат и определяется пересечение этого множество с множеством, состоящем из одной пары координат -- клетки **cell**. Если результатом будет пустое множество, то клетки **cell** в колонии нет.
 
