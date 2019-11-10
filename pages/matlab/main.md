@@ -16,7 +16,6 @@ accent_image: /assets/img/Matlab_Logo.png
 - [Относительное орбитальное движение.](https://drive.google.com/file/d/1v7Tq9Y7FwSw_kPvG34kgO5I0tnQPO9ke/view?usp=sharing)
 - [Численные методы.](https://drive.google.com/file/d/1DVVfcaNGIjlF7u0aznjeTcOuit0u440C/view?usp=sharing)
 - [Интегрирование ОДУ.](https://drive.google.com/file/d/1mkPMzw2WQ5OCN698WO1JFSOTdotMtEv0/view?usp=sharing)
-
  
 ## Примеры 
 
@@ -28,5 +27,7 @@ accent_image: /assets/img/Matlab_Logo.png
 
 - [Сборник заданий для лабораторных работ (курс "Интегрированные математические пакеты").](./labs.md) 
 - [Сборник заданий для лабораторных работ в формате PDF](https://drive.google.com/file/d/1MCllOBBLNtFwfJMVrEQFDN5Bp6prMvFE/view?usp=sharing)
+
+## Шаблоны
 
 - [Шаблон отчета по лабораторной работе (LaTeX)](https://www.overleaf.com/read/bmjpzvrbdfny)
