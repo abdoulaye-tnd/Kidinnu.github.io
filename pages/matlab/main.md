@@ -28,6 +28,10 @@ accent_image: /assets/img/Matlab_Logo.png
 - [Сборник заданий для лабораторных работ (курс "Интегрированные математические пакеты").](./labs.md) 
 - [Сборник заданий для лабораторных работ в формате PDF](https://drive.google.com/file/d/1MCllOBBLNtFwfJMVrEQFDN5Bp6prMvFE/view?usp=sharing)
 
+## Промежуточный контроль
+
+- [Задания для контрольной работы](https://drive.google.com/drive/folders/1qOR3UwUljpp9ihgBNMfegcgPKlRaR-6P)
+
 ## Шаблоны
 
 - [Шаблон отчета по лабораторной работе (LaTeX)](https://www.overleaf.com/read/bmjpzvrbdfny)
