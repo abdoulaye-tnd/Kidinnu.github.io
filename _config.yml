@@ -267,11 +267,11 @@ plugins:
 # Where you proof that you own this site (used by jekyll-seo-tag)
 # google_site_verification: <verification-id>
 # -- or --
-# webmaster_verifications:
+webmaster_verifications:
 #   google:              <verification-id>
 #   bing:                <verification-id>
 #   alexa:               <verification-id>
-#   yandex:              <verification-id>
+yandex:              9d46eef6304af245
 
 # Used for Twitter cards 
 # twitter:
