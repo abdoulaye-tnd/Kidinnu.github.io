@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: list
 title: Модель двойного маятника в Mathematica
 tags: [mathematica]
