@@ -68,6 +68,7 @@ $$
 $$
 
 Для $$\sigma > \sigma^*$$ (подкритический расход)
+
 $$
   G_m = \sqrt{\frac{2 k g}{k-1}} \frac{fp_1 \varphi(\sigma)}{\sqrt{RT}}
 $$
