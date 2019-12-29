@@ -49,10 +49,10 @@ thermalModelT.StefanBoltzmannConstant = 5.670373E-8;
 thermalBC(thermalModelT,'Edge',[1 2 4 5 6 7],'Emissivity',0.1,'AmbientTemperature',273);
 ~~~
 
-Внутренний источник тепла в тонком слое на верхней границе тела (F2). В этом слое генерируется $$10^6 \cdot 0.4 \times 0.01 = 4 $$ кДж тепла в секунду.
+Внутренний источник тепла в тонком слое на верхней границе тела (F2). В этом слое генерируется $$2 \cdot 10^7 \cdot 0.4 \times 0.01 = 80 $$ кДж в секунду.
 
 ~~~matlab
-internalHeatSource(thermalModelT,1e6,'Face',2);
+internalHeatSource(thermalModelT,2e7,'Face',2);
 ~~~
 
 Создаем сетку
@@ -113,3 +113,6 @@ ylabel('Температура, K');
 ~~~
 
 ![2019-12-10-pde-thermal-f5.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f5.png)
+
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/C9y7O58UQQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
