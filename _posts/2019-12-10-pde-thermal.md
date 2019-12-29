@@ -7,7 +7,7 @@ tags: [matlab,термодинамика]
 
 Использование модуля pde-toolbox для решения нестационарной задачи теплопроводности.
 
-![2019-12-10-pde-thermal-f1.jpg](2019-12-10-pde-thermal-f1.jpg)
+![2019-12-10-pde-thermal-f1.jpg]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f1.jpg)
 
 ~~~matlab
 % Нестационарная модель
@@ -25,7 +25,7 @@ k = 50;     % Теплопроводность, W/(m-degree C)
 rho = 7800; % плотность, kg/m^3
 cp = 468;   % удельная теплоёмкость, W-s/(kg-degree C)
 
-thermalProperties(thermalModelT,'ThermalConductivity',40,'MassDensity',rho,'SpecificHeat',10);
+thermalProperties(thermalModelT,'ThermalConductivity',k,'MassDensity',rho,'SpecificHeat',cp);
 
 ~~~
 
@@ -36,7 +36,7 @@ pdegplot(thermalModelT,'EdgeLabels','on','SubdomainLabels','on');
 axis equal
 ~~~
 
-![2019-12-10-pde-thermal-f2.png](2019-12-10-pde-thermal-f2.png)
+![2019-12-10-pde-thermal-f2.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f2.png)
 
 Идентификаторы ребер (E1, 2, 3, ... 7) и областей (F1, F2) используются при задании граничных условий.    
 
@@ -64,7 +64,7 @@ axis equal
 title 'Сетка'
 ~~~
 
-![2019-12-10-pde-thermal-f3.png](2019-12-10-pde-thermal-f3.png)
+![2019-12-10-pde-thermal-f3.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f3.png)
 
 Запускаем расчёт на интервале от 0 до 600 с с шагом 0,1 с. 
 
