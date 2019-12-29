@@ -114,5 +114,6 @@ ylabel('Температура, K');
 
 ![2019-12-10-pde-thermal-f5.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f5.png)
 
+Ниже на видео показана динамика изменения температуры. Стрелками показано направление тепловых потоков. Показана температура на верхней грани, нижней грани и разница температур.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/C9y7O58UQQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
