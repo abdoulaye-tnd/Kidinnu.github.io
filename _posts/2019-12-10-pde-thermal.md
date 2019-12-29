@@ -87,17 +87,29 @@ result = solve(thermalModelT,tlist)
 Карта температуры в момент t=600 c.
 
 ~~~matlab
-pdeplot(thermalModelT,'XYData',result.Temperature(:,end),'Contour','on','ColorMap','hot');
+pdeplot(thermalModelT,'XYData',result.Temperature(:,end),'Contour','on','ColorMap','hot'); hold on;
+plot(0,0.00,'bo'); 
+plot(0,0.11,'bo'); 
+text(0,-0.01,'T2','FontSize',18);
+text(0, 0.12,'T1','FontSize',18);
+hold off;
+set(gca,'FontSize',14,'LineWidth',1);grid on;
+xlim([-0.25 0.25]);
+ylim([-0.05 0.15]);
 ~~~
+
+![2019-12-10-pde-thermal-f4.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f4.png)
 
 График изменения температуры на верхней и нижней грани балки.
 
 ~~~matlab
-probeTemp = cell2mat(arrayfun(@(i) interpolateTemperature(result,[0 0],[0.01 0],i)',(1:length(tlist))','UniformOutput',false));
-subplot(3,1,3);
-plot(tlist,probeTemp(:,1));
-hold on;
-plot(tlist,probeTemp(:,2));
-hold off;
+probeTemp = cell2mat(arrayfun(@(i) interpolateTemperature(result,[0 0],[0.11 0],i)',(1:length(tlist))','UniformOutput',false));
+plot(tlist,probeTemp(:,1),'r-','LineWidth',2); hold on;
+plot(tlist,probeTemp(:,2),'b-','LineWidth',2); hold off;
+set(gca,'FontSize',14,'LineWidth',1);grid on;
+legend('T1','T2');
+xlabel('t, c');
+ylabel('Температура, K');
 ~~~
 
+![2019-12-10-pde-thermal-f5.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f5.png)
