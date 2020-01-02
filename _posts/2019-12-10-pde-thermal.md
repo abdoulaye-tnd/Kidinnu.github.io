@@ -152,13 +152,7 @@ ylabel('Температура, K');
 
 ![2019-12-10-pde-thermal-f5.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f5.png)
 
-Ниже на видео показана динамика изменения температуры. Стрелками показано направление тепловых потоков. Показана температура на верхней грани, нижней грани и разница температур.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_BERXTfAqos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-Для построения видео использовался следующий код
+Ниже на видео показана динамика изменения температуры. Стрелками показано направление тепловых потоков. Показана температура на верхней грани, нижней грани и разница температур. Для построения видео использовался следующий код
 
 ~~~matlab
 v = VideoWriter('temperature.avi');
@@ -189,4 +183,7 @@ for i=1:5:size(tlist,2)
 end
 close(v);
 ~~~
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_BERXTfAqos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
