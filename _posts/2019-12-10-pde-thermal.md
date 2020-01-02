@@ -7,7 +7,7 @@ description: |
 tags: [matlab,термодинамика]
 ---
 
-Рассматривается нестационарная задача теплопроводности. Пластина со сторонами $$a = 0.4$$ м, $$b=0.05$$ м нагревается в тонком слое толщиной $$d=1$$ мм (на верхней грани). В слое в одну секунду генерируется 80 кДж тепла.   
+Рассматривается нестационарная задача теплопроводности. Пластина со сторонами $$a = 0.4$$ м, $$b=0.05$$ м нагревается в тонком слое толщиной $$d=1$$ мм (на верхней грани). В слое в одну секунду генерируется 8 кДж тепла.   
 
 ![2019-12-10-pde-thermal-f1.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f1.png)
 
@@ -70,7 +70,7 @@ axis equal
 thermalModelT.StefanBoltzmannConstant = 5.670373E-8; 
 % Излучение со всех ребер
 % Степень черноты 0.8
-% Температура среды 273 
+% Температура среды 4 К 
 thermalBC(thermalModelT,'Edge',[1 2 4 5 6 7],'Emissivity',0.8,'AmbientTemperature', 4);
 ~~~
 
@@ -111,10 +111,23 @@ result = solve(thermalModelT,tlist)
 
 ## Результаты
 
-Карта температуры в момент t=600 c.
+После выполнения функции solve на консоль MATLABа выводится следующая информация
 
 ~~~matlab
-pdeplot(thermalModelT,'XYData',result.Temperature(:,numel(tlist)),'Contour','on','ColorMap','hot'); hold on;
+34 successful steps
+0 failed attempts
+49 function evaluations
+1 partial derivatives
+12 LU decompositions
+48 solutions of linear systems
+~~~
+
+Карта температуры в момент t=3600 c.
+
+~~~matlab
+pdeplot(thermalModelT,'XYData',result.Temperature(:,numel(tlist)),'Contour','on','ColorMap','hot'); 
+% Покажем метки точек, для которых далее будут построены графики изменения температуры
+hold on;
 plot(0,0.000,'bo'); 
 plot(0,0.051,'bo'); 
 text(0,-0.010,'T2','FontSize',18);
@@ -131,6 +144,7 @@ ylim([-0.05 0.15]);
 
 ~~~matlab
 probeTemp = cell2mat(arrayfun(@(i) interpolateTemperature(result,[0.000 0.000],[0.051 0.000],i)',(1:length(tlist))','UniformOutput',false));
+% Первый график на интервале от 0 до 100 с
 subplot(1,2,1);
 plot(tlist,probeTemp(:,1),'r-','LineWidth',2); hold on;
 plot(tlist,probeTemp(:,2),'b-','LineWidth',2); hold off;
@@ -140,6 +154,7 @@ legend('T1','T2');
 xlabel('t, c');
 ylabel('Температура, K');
 xlim([0,100]);
+% Второй график на всем интервале от 0 до 3600 с
 subplot(1,2,2);
 plot(tlist,probeTemp(:,1),'r-','LineWidth',2); hold on;
 plot(tlist,probeTemp(:,2),'b-','LineWidth',2); hold off;
@@ -152,7 +167,7 @@ ylabel('Температура, K');
 
 ![2019-12-10-pde-thermal-f5.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f5.png)
 
-Ниже на видео показана динамика изменения температуры. Стрелками показано направление тепловых потоков. Показана температура на верхней грани, нижней грани и разница температур. Для построения видео использовался следующий код
+Ниже на видео показана динамика изменения температуры. Стрелками показаны направления тепловых потоков. Показана температура на верхней грани, нижней грани и разница температур. Для построения видео использовался следующий код
 
 ~~~matlab
 v = VideoWriter('temperature.avi');
@@ -168,15 +183,21 @@ for i=1:5:size(tlist,2)
     %[qTx,qTy] = evaluateHeatFlux(result,0.2,0.05,1:length(tlist));    
     pdeplot(thermalModelT,'XYData',result.Temperature(:,i),'Contour','on', ...
                      'FlowData',[qTx(:,i) qTy(:,i)], ...
-                     'ColorMap','hot','Levels',3);    
-    axis([-0.25 0.25,-0.05, 0.15]);
+                     'ColorMap','hot','Levels',3);        
+    axis([-0.25 0.25,-0.05, 0.15]);    
+    % Определим температуру в двух точках [0,0] и [b+d, 0]
+    % координаты точек задаются двумя массивами координат x и y
+    % [x1, x2, x3, ...], [y1, y2, y3, ...]
     Temp = interpolateTemperature(result,[0 0],[b+d 0],i);
     text(0,-0.010,sprintf('%5.1f',Temp(2)),'FontSize',20);
-    text(0,+0.060,sprintf('%5.1f',Temp(1)),'FontSize',20);
-    
-    text(0,-0.03,sprintf('dT = %5.1f',Temp(1)-Temp(2)),'FontSize',20);
+    text(0,+0.060,sprintf('%5.1f',Temp(1)),'FontSize',20);    
+    % Разница температур
+    text(0,-0.03,sprintf('dT = %5.1f',Temp(1)-Temp(2)),'FontSize',20);    
+    % Время
     text(-0.2, 0.12,sprintf('t = %5.1f', tlist(i)),'FontSize',20);
+    % Шрифт для подписей осей
     set(gca,'FontSize',20);
+    % Сетка
     grid on;   
     frame = getframe(gcf);    
     writeVideo(v,frame);
