@@ -74,7 +74,7 @@ thermalModelT.StefanBoltzmannConstant = 5.670373E-8;
 thermalBC(thermalModelT,'Edge',[1 2 4 5 6 7],'Emissivity',0.8,'AmbientTemperature', 4);
 ~~~
 
-Внутренний источник тепла в тонком слое на верхней границе тела (F2). В этом слое генерируется $$2 \cdot 10^7 \cdot 0.4 \times 0.001 = 8 $$ кДж в секунду.
+Внутренний источник тепла в тонком слое на верхней границе тела (F2). В этом слое генерируется $$2 \cdot 10^7 \cdot 0.4 \times 0.001 = 8 $$ кДж в секунду. В общем случае, это может быть не число ($$2 \cdot 10^7$$), а ссылка на функцию координат и времени.
 
 ~~~matlab
 internalHeatSource(thermalModelT,2e7,'Face',2);
@@ -140,7 +140,7 @@ ylim([-0.05 0.15]);
 
 ![2019-12-10-pde-thermal-f4.png]({{site.baseurl}}/assets/img/2019-12-10-pde-thermal-f4.png)
 
-График изменения температуры на верхней и нижней грани балки.
+График изменения температуры на верхней и нижней грани пластины.
 
 ~~~matlab
 probeTemp = cell2mat(arrayfun(@(i) interpolateTemperature(result,[0.000 0.000],[0.051 0.000],i)',(1:length(tlist))','UniformOutput',false));
@@ -148,7 +148,6 @@ probeTemp = cell2mat(arrayfun(@(i) interpolateTemperature(result,[0.000 0.000],[
 subplot(1,2,1);
 plot(tlist,probeTemp(:,1),'r-','LineWidth',2); hold on;
 plot(tlist,probeTemp(:,2),'b-','LineWidth',2); hold off;
-%plot(tlist,probeTemp(:,2)-probeTemp(:,1),'b-','LineWidth',2);
 set(gca,'FontSize',14,'LineWidth',1);grid on;
 legend('T1','T2');
 xlabel('t, c');
