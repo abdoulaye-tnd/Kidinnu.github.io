@@ -10,6 +10,6 @@ title:  Дисциплины
 1. [Основы MATLAB](/pages/matlab/main)
 1. [Информатика](/pages/informatics/main)
 1. [Управление IT-сервисом и контентом](/pages/it/main)
-1. Базы данных
+1. [Базы данных](/pages/databases/main)
 1. Компьютерные и экспериментальные методы в механике
 1. Основы Wolfram Mathematica
