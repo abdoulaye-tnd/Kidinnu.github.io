@@ -1,8 +1,6 @@
 ---
-layout: page
-title: Методы вычислений
-published: true
+# file: index.md
+layout: welcome
+title:  Welcome
+cover:  true
 ---
-
-[Презентации](presentations.md)
-
