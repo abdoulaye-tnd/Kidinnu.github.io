@@ -129,7 +129,8 @@ pd.DataFrame( rows, columns=('Исполнитель', 'Альбом', 'Год')
 
 Результат будет выглядеть так:
 
-![database_folder.png](/pages/databases/panda_table_res.png)
+![database_folder.png](/pages/databases/panda_table_res.png){:.lead data-width="300"}
+{:.figure}
 
 
 
