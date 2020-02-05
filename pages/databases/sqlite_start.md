@@ -2,22 +2,23 @@
 layout: page
 title: Основы работы c SQLite
 published: true
+description: Работа в Google Colab с базой данных SQLite, расположенной на диске Google Drive 
 ---
 
 ## Доступ к Google Drive для хранения базы данных
 
-Этот код необходимо выполнить только один раз для разрешения доступа Google Colab к диску Google Drive.  
+Для работы в Google Colab с файлами на диске Google Drive необходимо разрешить доступ. Для этого нужно выполнить следующий код 
 
 ~~~python
 from google.colab import drive
 drive.mount('/content/drive')
 ~~~
 
-При первом выполнении этого кода Google Colab предложит перейти по предложенной ссылке для разрешения доступа к диску 
+Google Colab предложит перейти по предложенной ссылке для разрешения доступа к диску 
 
 ![database_folder.png](/pages/databases/auth_gd_1.png)
 
-После того, как вы разрешите доступ к диску Google Drive, появится окно с кодом, который нужно вставить в показанное выше поле "Enter your authorization code"
+После того, как вы разрешите доступ к диску Google Drive, появится окно с кодом, который нужно вставить в показанное выше поле "Enter your authorization code":
 
 ![database_folder.png](/pages/databases/auth_gd_2.png)
 
@@ -129,5 +130,5 @@ pd.DataFrame( rows, columns=('Исполнитель', 'Альбом', 'Год')
 
 Результат будет выглядеть так:
 
-![database_folder.png](/pages/databases/panda_table_res.png){:.lead data-width="200"}
+![database_folder.png](/pages/databases/panda_table_res.png){:.lead data-width="200px"}
 
