@@ -15,6 +15,9 @@ published: true
 
 ## Презентации для конференций и семинаров
 
+1. V. Trushlyakov, V. Yudintsev [Method of Active Debris Removal Using Rotating Space Tether System](https://1drv.ms/p/s!AiJk3nAGeU5bhMlWOv0NeYHitZzKFw?e=ubLe5h). The First International Orbital Debris Conference (IOC) 
+December 9–12, 2019, Sugar Land, Texas. 
+
 1. Трушляков В. И., Юдинцев В. В. [Вращающаяся тросовая система для увода космического мусора](https://drive.google.com/file/d/1PQ-8ZMFFKO5MHDjg3DcxUPVjqq-Zrtcs/view?usp=sharing). III International scientific conference "Mechanical Science and Technology Update" (MSTU-2019). 23-24 April, 2019 (Omsk, Russia).
 
 1. Трушляков В.И., Юдинцев В. В. [Космический буксир на базе ТГК "Прогресс" для активного увода космического мусора](https://drive.google.com/file/d/1sGT0h9tBtmcxlB7LeMF44CEFPpyDUr9l/view?usp=sharing). Презентация для Девятого Международного Аэрокосмического Конгресса. МГУ им. М.В. Ломоносова, 28-31 августа 2018 г.
