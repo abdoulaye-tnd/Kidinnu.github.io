@@ -17,4 +17,24 @@ published: true
 
 ## Лабораторные работы
 
-[Google Colab + SQLite](sqlite_start.md)
+### Необходимое программное обеспечение
+
+1. [Google Colab + SQLite](sqlite_start.md)
+2. [draw.io](https://draw.io)
+3. [RemoteMySQL](https://remotemysql.com) 
+
+### Требованя к отчету по лабораторным работам
+
+...
+
+### Задания для лабораторных работ
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+
+
