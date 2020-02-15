@@ -139,3 +139,6 @@ pd.DataFrame( rows, columns=('Исполнитель', 'Альбом', 'Год')
 Результат будет выглядеть так:
 
 ![database\_folder.png](/pages/databases/panda_table_res.png){:.lead data-width="200px"}
+
+
+<script src="https://gist.github.com/Kidinnu/3503edd9ce279929b6ffa207e563cd7c.js"></script>
