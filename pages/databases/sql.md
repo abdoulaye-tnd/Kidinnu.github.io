@@ -8,7 +8,7 @@ published: true
 
 [Описание БД](goods.md)
 
-[Скачать базу данных](https://drive.google.com/file/d/1hK8fEqvoLe-iY-bNqprB7l72kqoV41MN/view?usp=sharing)
+[Скачать базу данных SQLite](https://drive.google.com/file/d/1hK8fEqvoLe-iY-bNqprB7l72kqoV41MN/view?usp=sharing)
 
 ## Постройте SQL-запросы для получения следующей информации из базы данных.
  

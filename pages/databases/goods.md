@@ -13,7 +13,7 @@ published: true
 1. categories (категории товара)
 1. manufacturers (производители товара)
 
-[Скачать базу данных](https://drive.google.com/file/d/1hK8fEqvoLe-iY-bNqprB7l72kqoV41MN/view?usp=sharing)
+[Скачать базу данных SQLite](https://drive.google.com/file/d/1hK8fEqvoLe-iY-bNqprB7l72kqoV41MN/view?usp=sharing)
 
 ## Таблицы
 
@@ -79,12 +79,11 @@ published: true
 |--------|:----------:|:-----------------:|:---------------:|:---------------:|:---------------:|
 |  customer_id |store_id | product_id | product_count   | purchase_date | product_price | 
 
-## Схема связи таблиц
+## Схема связи таблиц базы данных
 
 ![database\_folder.png](/pages/databases/bd_goods.png)
 
-
-## SQL код создания таблиц
+## SQL-код для создания таблиц
 
 ~~~sql
 
