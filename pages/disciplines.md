@@ -12,5 +12,6 @@ title:  Дисциплины
 1. [Управление IT-сервисом и контентом](/pages/it/main)
 1. [Базы данных](/pages/databases/main)
 1. [Основы Wolfram Mathematica](/pages/wolfram/main)
+1. [Прикладные задачи динамики твердого тела и систем тел](/pages/mechanics-in-space/main)
 1. Компьютерные и экспериментальные методы в механике
 
