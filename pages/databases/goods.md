@@ -8,6 +8,7 @@ published: true
 1. clients (покупатели)
 1. products (товары)
 1. purchases (покупки)
+1. purchase_item (элемент покупки)
 1. deliveries (поставки)
 1. price_change (изменения цены товаров)
 1. categories (категории товара)
@@ -73,11 +74,20 @@ published: true
 
 ### Покупки (purchases)
 
-Таблица покупок содержит идентификатор покупателя, совершившего покупку, идентификатор филиала, где была совершена покупка, идентификатор купленного товара, его количество и дату покупки. Для упрощения анализа информации о покупках в таблицу введено поле цена продукта на момент покупки.
+Таблица покупок или таблица счетов на оплату товаров, покупаемых в рамках одной покупки. Таблица содержит идентификатор покупки, идентификатор покупателя, совершившего покупку, идентификатор филиала, где была совершена покупка и дату покупки. 
 
-| Идентификатор покупателя |Идентификатор филиала | Идентификатор товара | Количество товара | Дата покупки | Цена товара |
-|--------|:----------:|:-----------------:|:---------------:|:---------------:|:---------------:|
-|  customer_id |store_id | product_id | product_count   | purchase_date | product_price | 
+| Идентификатор покупки | Идентификатор покупателя |Идентификатор филиала | Дата покупки |
+|--------|:----------:|:-----------------:|:---------------:|:---------------:|
+|  purchase_id | customer_id |store_id | product_id | product_count   | purchase_date | product_price | 
+
+### Элемент покупки (purchase_item)
+
+Таблица содержит информацию о товарах, купленных в рамках одной покупки (товары в счете на оплату). Для упрощения анализа информации о покупках в таблицу введено поле цена продукта на момент покупки.
+
+| Идентификатор покупки |Идентификатор товара | Количество товара | Цена товара |
+|--------|:----------:|:-----------------:|:---------------:|
+|  purchase_id | product_id | product_count | product_price | 
+
 
 ## Схема связи таблиц базы данных
 
@@ -95,6 +105,7 @@ DROP TABLE IF EXISTS stores;
 DROP TABLE IF EXISTS deliveries;
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS purchases;
+DROP TABLE IF EXISTS purchase_items;
 
 CREATE TABLE IF NOT EXISTS categories 
 (
@@ -140,33 +151,37 @@ CREATE TABLE IF NOT EXISTS deliveries
     store_id INTEGER NOT NULL,
     delivery_date  INTEGER NOT NULL,
     product_count  INTEGER NOT NULL,    
-    CONSTRAINT PK_DELIVERY PRIMARY KEY (product_id, store_id, delivery_date), 
     FOREIGN KEY ([product_id]) REFERENCES "products" ([product_id]) ON DELETE NO ACTION ON UPDATE NO ACTION,
     FOREIGN KEY ([store_id]) REFERENCES "stores" ([store_id]) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 
-CREATE TABLE IF NOT EXISTS "customers"
+CREATE TABLE IF NOT EXISTS customers
 (
     customer_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     customer_name text  NOT NULL
 );
 
 
-CREATE TABLE IF NOT EXISTS "purchases"
-(    
-    customer_id INTEGER  NOT NULL,
+CREATE TABLE IF NOT EXISTS purchases
+(
+    purchase_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    customer_id INTEGER NOT NULL,
     store_id INTEGER  NOT NULL,    
-    product_id INTEGER  NOT NULL,        
-    product_count INTEGER  NOT NULL,    
     purchase_date INTEGER NOT NULL,
-    product_price REAL NOT NULL,
-    CONSTRAINT PK_PURCHASE PRIMARY KEY (customer_id, store_id, product_id, purchase_date),
     FOREIGN KEY ([customer_id]) REFERENCES "customers" ([customer_id]) ON DELETE NO ACTION ON UPDATE NO ACTION,
-    FOREIGN KEY ([product_id]) REFERENCES "products" ([product_id]) ON DELETE NO ACTION ON UPDATE NO ACTION,
     FOREIGN KEY ([store_id]) REFERENCES "stores" ([store_id]) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
-
+CREATE TABLE IF NOT EXISTS purchase_items
+(
+    purchase_id INTEGER NOT NULL,
+    product_id INTEGER NOT NULL,
+    product_count INTEGER NOT NULL,
+    product_price REAL NOT NULL,
+    CONSTRAINT PK_PURCHASE_ITEMS PRIMARY KEY (purchase_id, product_id),  
+    FOREIGN KEY ([product_id]) REFERENCES "products" ([product_id]) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    FOREIGN KEY ([purchase_id]) REFERENCES "purchases" ([purchase_id]) ON DELETE NO ACTION ON UPDATE NO ACTION
+);
 
 ~~~
