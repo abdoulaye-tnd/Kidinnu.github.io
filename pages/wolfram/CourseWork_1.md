@@ -10,7 +10,7 @@ $$
 \varphi = \varphi_0 + \omega t
 $$ 
 
-![Рисунок 1](mech1.png)
+![Рисунок 1](mech1.jpg)
 Рисунок 1 - Схема механической системы и силы, действующие на шарик
 {:.figure}
 
@@ -126,5 +126,16 @@ $$
     \text{eqy} = m\,a.e_y = F.e_y //\text{FullSimplify}
 $$
 
+В уравнениях движения необходимо заменить функцию $$ \varphi(t) $$ и её производные заданными выражениями, исходя из заданного закона изменения угла поворота $$ \varphi = \varphi_0 + \omega t$$ 
+
+$$
+\text{conditions} = \{ \varphi'[t] -> \omega, \varphi[t] -> \varphi0 + \omega\,t, \varphi''[t] -> 0 \};
+$$
+
+Перепишем первое уравнение
+
+$$
+    \text{eqx} = m\,a.e_x = F.e_x /. \text{conditions} //\text{FullSimplify}
+$$
 
 
